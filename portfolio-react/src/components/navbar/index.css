@@ -1,0 +1,26 @@
+#navBar {
+  height: 3em;
+  color: white;
+  display: flex;
+  justify-content: left;
+  background-color: #333;
+}
+#navBar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+#navBar li {
+  display: inline;
+}
+#navBar a {
+  padding: 1em 3em 1em 1em;
+}
+#navBar a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+#navBar a:hover {
+  background-color: red;
+}/*# sourceMappingURL=index.css.map */
