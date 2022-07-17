@@ -11,5 +11,8 @@ You can find the latest deployment available at: https://leestevens-portfolio-re
 # Dependencies
 <ol>
 <li>React</li>
+<li>React-Dom</li>
+<li>React-Router-Dom</li>
 <li>Vite</li>
+<li>Sass</li>
 </ol>
