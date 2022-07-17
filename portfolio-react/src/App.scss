@@ -9,19 +9,18 @@
   padding: 1.5em;
   will-change: filter;
 }
-
 .logo:hover {
-  filter: drop-shadow(0 0 2em rgba(96, 197, 255, 0.6666666667));
+  filter: drop-shadow(0 0 2em #60c5ffaa);
 }
 
-a:hover {
-  filter: drop-shadow(0 0 2em rgba(97, 218, 251, 0.6666666667));
+a:hover{
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-main {
+main{
   text-align: center;
 }
 
 .navBar {
   text-align: center;
-}/*# sourceMappingURL=App.css.map */
+}
