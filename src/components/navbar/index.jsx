@@ -7,33 +7,17 @@ const NavBar = () => {
             <nav>
                 <ul>
                 <li>
-                    <a href="https://www.linkedin.com/in/lee-stevens-dev/">LinkedIn</a>
+                    <a href="/">Home</a>
                 </li>
                 <li>
-                    <a href="https://github.com/leesprojects">GitHub</a>
+                    <a href="/Unity">Unity Projects</a>
                 </li>
                 <li>
-                    <a href="https://leetcode.com/Zaeroso/">Leetcode</a>
+                    <a href="/WebDev">Web Development</a>
                 </li>
                 </ul>
             </nav>
             </section>
-
-            <section class="titleSection">
-            <div>
-                <video autoplay muted>
-                <source src="videos/Video - Test A.mp4"></source>
-                </video>
-            </div>
-            <div>
-                <div>
-                <img class="logo" src="images/icon - ls.jpg"></img>
-                </div>
-                <div>
-                <h1>Lee Stevens | Portfolio </h1>
-                </div>
-            </div>
-        </section>
       </>
     )
 }
