@@ -6,7 +6,7 @@ const Home = () => {
             <main>
                 <section className="titleSection">
                     <div>
-                        <video autoPlay muted>
+                        <video autoPlay muted loop>
                         <source src="videos/test a.mp4"></source>
                         </video>
                     </div>
