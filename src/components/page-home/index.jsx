@@ -5,11 +5,6 @@ const Home = () => {
         <main>
             <section className="titleSection">
                 <div>
-                    <video autoPlay muted loop>
-                    <source src="videos/test a.mp4"></source>
-                    </video>
-                </div>
-                <div>
                     <div>
                     <img className="logo" src="images/icon - ls.jpg"></img>
                     </div>
