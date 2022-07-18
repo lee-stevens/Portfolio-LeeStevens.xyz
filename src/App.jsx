@@ -8,7 +8,7 @@ import './App.css'
 
 function App() {
   return (
-    <>
+    <div className='App'>
       <NavBar/>
       <Router>
         <Routes>
@@ -17,8 +17,7 @@ function App() {
           <Route path="/WebDev" element={<WebDev/>}/>
         </Routes>
       </Router>
-
-    </>
+    </div>
   )
 }
 

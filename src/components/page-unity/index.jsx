@@ -2,24 +2,24 @@ import './index.css'
 
 const Unity = () => {
     return (
-        <>
+        <main>
             <section className="titleSection">
+                <div>
+                    <video autoPlay muted>
+                    <source src="videos/test a.mp4"></source>
+                    </video>
+                </div>
+                <div>
                     <div>
-                        <video autoPlay muted>
-                        <source src="videos/test a.mp4"></source>
-                        </video>
+                    <img className="logo" src="images/icon - ls.jpg"></img>
                     </div>
                     <div>
-                        <div>
-                        <img className="logo" src="images/icon - ls.jpg"></img>
-                        </div>
-                        <div>
-                        <h1>Unity Projects</h1>
-                        </div>
+                    <h1>Unity Projects</h1>
                     </div>
-                </section>
+                </div>
+            </section>
 
-                <section>
+            <section>
                 <div className="sectionHeader">
                     <h1>Project Epsilon</h1>
                 </div>
@@ -32,9 +32,9 @@ const Unity = () => {
                     Sed finibus est a nunc convallis, quis egestas lectus cursus. Donec ornare risus nibh, ut ultrices ex auctor eget. Quisque eros mi, congue scelerisque metus id, faucibus tincidunt lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec libero mauris, pretium eu volutpat sit amet, sagittis at odio. Nulla feugiat porta massa, eu vestibulum augue varius at. Nam vitae mauris id magna ultrices varius. Curabitur auctor fermentum leo in maximus. Fusce lobortis, risus quis porttitor placerat, mauris nisl viverra tortor, sit amet ullamcorper tortor nibh in enim. Aenean dapibus blandit eros in euismod. Praesent sed egestas nisi. Morbi dignissim mauris at elit venenatis, sit amet bibendum elit facilisis. Sed egestas egestas justo id ultricies. Ut blandit ligula ut rhoncus faucibus.
                     </p>
                 </div>
-                </section>
+            </section>
 
-                <section>
+            <section>
                 <div className="sectionHeader">
                     <h1>Project Wildlands</h1>
                 </div>
@@ -47,8 +47,8 @@ const Unity = () => {
                     Sed finibus est a nunc convallis, quis egestas lectus cursus. Donec ornare risus nibh, ut ultrices ex auctor eget. Quisque eros mi, congue scelerisque metus id, faucibus tincidunt lorem. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec libero mauris, pretium eu volutpat sit amet, sagittis at odio. Nulla feugiat porta massa, eu vestibulum augue varius at. Nam vitae mauris id magna ultrices varius. Curabitur auctor fermentum leo in maximus. Fusce lobortis, risus quis porttitor placerat, mauris nisl viverra tortor, sit amet ullamcorper tortor nibh in enim. Aenean dapibus blandit eros in euismod. Praesent sed egestas nisi. Morbi dignissim mauris at elit venenatis, sit amet bibendum elit facilisis. Sed egestas egestas justo id ultricies. Ut blandit ligula ut rhoncus faucibus.
                     </p>
                 </div>
-                </section>
-        </>
+            </section>
+        </main>
     )
 }
 

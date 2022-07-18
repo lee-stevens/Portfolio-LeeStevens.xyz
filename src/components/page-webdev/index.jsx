@@ -2,7 +2,7 @@ import './index.css'
 
 const WebDev = () => {
     return (
-        <>
+        <main>
             <section className="titleSection">
                 <div>
                     <div>
@@ -43,7 +43,7 @@ const WebDev = () => {
                     </p>
                 </div>
             </section>
-        </>
+        </main>
     )
 }
 

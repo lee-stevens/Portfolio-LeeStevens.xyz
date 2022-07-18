@@ -12,7 +12,7 @@ const NavBar = () => {
                     <li><a href="https://leestevens-portfolio-three.netlify.app/">ThreeJS</a></li>
                 </ul>
             </nav>
-            </section>
+        </section>
       </>
     )
 }
