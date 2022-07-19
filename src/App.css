@@ -5,7 +5,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -21,6 +21,8 @@ body {
 
 .sectionContent {
   padding-bottom: 2rem;
+  margin: 0 auto;
+  min-height: 400px;
 }
 
 .sectionHeader, .sectionContent {
@@ -48,7 +50,10 @@ body {
 }
 .headerImage img, .headerImage video {
   z-index: -1;
-  max-width: 100%;
+  width: 100%;
+  max-height: 60vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 .headerImage .centeredOverlay {
   position: absolute;
@@ -91,20 +96,22 @@ video {
 
 #navBar {
   z-index: 100;
-  color: black;
-  background-color: rgba(228, 228, 228, 0.582);
+  background-color: rgba(228, 228, 228, 0.801);
   overflow: hidden;
   display: flex;
   justify-content: center;
-  padding: 1em;
   position: fixed;
   top: 0;
   width: 100%;
 }
-#navBar a {
-  padding: 2em;
+#navBar button {
+  padding: 1em 2em 1em 2em;
+  background: none;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
 }
-#navBar a, #navBar a:visited {
-  text-decoration: none;
-  color: inherit;
+#navBar button:hover {
+  background-color: rgb(114, 114, 114);
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */
