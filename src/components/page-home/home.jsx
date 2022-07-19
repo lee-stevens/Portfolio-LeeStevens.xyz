@@ -1,6 +1,8 @@
 import './index.css'
 import { motion } from "framer-motion"
 import { pageAnimation, sectionContentAnimation } from "../frameranimations/frameranimations"
+import NavBar from '../navbar/navbar'
+
 
 const Home = () => {
     return (
@@ -19,7 +21,7 @@ const Home = () => {
             </section>
             <motion.div initial="initial" animate="animate" exit="exit"
             variants={sectionContentAnimation} 
-            transition={{ duration: 4}}>
+            transition={{ duration: 2}}>
 
                 <section>
                     <div className="sectionHeader">
@@ -53,7 +55,7 @@ const Home = () => {
                 
                 <section>
                     <div className="sectionHeader">
-                        <h1>Game Development - Unity</h1>
+                        <h1 >Game Development - Unity</h1>
                     </div>
                     <div className="sectionContent">
                         <p>
