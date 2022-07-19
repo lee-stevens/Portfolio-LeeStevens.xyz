@@ -4,13 +4,12 @@ const Home = () => {
     return (
         <main>
             <section className="titleSection">
-                <div>
-                    <div>
-                    <img className="logo" src="images/icon - ls.jpg"></img>
-                    </div>
-                    <div>
-                    <h1>Lee Stevens | Portfolio </h1>
-                    </div>
+                <div className="headerImage">
+                    <img src="images/wildlands/Project Wildlands - Unity Final - Minigame Forest 2.png"></img>
+                    <div className="centeredOverlay">
+                        <h1>Lee Stevens</h1>
+                        <h3>Unity & Web Developer</h3>
+                    </div>       
                 </div>
             </section>
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import NavBar   from './components/navbar/' 
+import SideBar from './components/sidebar'
 import PageRouter from './components/pagerouter/pagerouter'
 import './App.css'
 import Loader from "react-spinners/HashLoader";
@@ -24,13 +25,14 @@ function App() {
     <div className='App'>
       {loading ? (
         <div className="pageLoader" style={style}>
-          <Loader className="loader" color={"#ffffff"} loading={loading} size={150} />
+          <Loader className="loader" color={"black"} loading={loading} size={150} />
           <p>Loading...</p>
         </div>
         
       ) : (
         <div className='pageContents'>
           <NavBar/>
+          <SideBar/>
           <PageRouter/>
         </div>
       )}

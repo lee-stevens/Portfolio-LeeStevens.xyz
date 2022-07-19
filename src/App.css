@@ -1,6 +1,6 @@
 #root {
   min-width: 1080px;
-  max-width: 1500px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0rem;
 }
@@ -11,23 +11,45 @@ body {
   min-height: 100vh;
 }
 
-main {
-  text-align: center;
-}
-
-.pageLoader {
+.titleSection {
   text-align: center;
 }
 
 .sectionHeader {
-  color: cyan;
   overflow: hide;
-  background-color: rgba(73, 94, 107, 0.2862745098);
+  background-color: rgba(253, 253, 253, 0.3215686275);
 }
 
 .sectionContent {
-  color: white;
-  padding-bottom: 10em;
+  padding-bottom: 2rem;
+}
+
+.sectionHeader, .sectionContent {
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.headerImage {
+  position: relative;
+  text-align: center;
+}
+.headerImage h1, .headerImage h3 {
+  color: black;
+}
+.headerImage h1 {
+  font-size: 5em;
+}
+.headerImage h3 {
+  font-size: 2em;
+}
+.headerImage img, .headerImage video {
+  max-width: 100%;
+}
+.headerImage .centeredOverlay {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .logo {
@@ -36,7 +58,7 @@ main {
 }
 
 .logo:hover {
-  filter: drop-shadow(0 0 2em rgba(52, 66, 75, 0.9921568627));
+  filter: drop-shadow(0 0 2em rgba(57, 166, 235, 0.9921568627));
 }
 
 video {
@@ -45,10 +67,8 @@ video {
 }
 
 .horizontalList {
-  color: white;
   display: flex;
   justify-content: center;
-  background-color: #333;
 }
 .horizontalList ul {
   list-style-type: none;

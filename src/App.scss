@@ -1,6 +1,6 @@
 #root {
   min-width: 1080px;
-  max-width: 1500px;
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0rem;
 }
@@ -11,31 +11,59 @@ body {
   min-height: 100vh;
 }
 
-main{
-  text-align: center;
-}
-
-.pageLoader{
+.titleSection{
   text-align: center;
 }
 
 .sectionHeader{
-  color: cyan;
   overflow: hide;
-  background-color: #495e6b49;
+  background-color: #fdfdfd52;
 }
 
 .sectionContent{
-  color: white;
-  padding-bottom: 10em;
+  padding-bottom: 2rem;
+}
+
+.sectionHeader, .sectionContent{
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.headerImage{
+  position: relative;
+  text-align: center;
+
+  h1, h3{
+    color: black;
+  }
+
+  h1{
+    font-size: 5em;
+  }
+
+  h3{
+    font-size: 2em;
+  }
+
+  img, video{
+    max-width: 100%;
+  }
+
+  .centeredOverlay{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .logo {
   height: 6em;
   padding: 1.5em;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #34424bfd);
+  filter: drop-shadow(0 0 2em #39a6ebfd);
 }
 
 video{
@@ -44,10 +72,8 @@ video{
 }
 
 .horizontalList{
-  color: white;
   display: flex;
   justify-content: center;
-  background-color: #333;
  
   ul {
     list-style-type: none;
