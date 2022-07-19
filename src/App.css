@@ -28,6 +28,11 @@ body {
   margin-right: 5rem;
 }
 
+.sectionDivider {
+  height: 100px;
+  background-color: rgba(201, 201, 201, 0.473);
+}
+
 .headerImage {
   position: relative;
   text-align: center;
@@ -42,6 +47,7 @@ body {
   font-size: 2em;
 }
 .headerImage img, .headerImage video {
+  z-index: -1;
   max-width: 100%;
 }
 .headerImage .centeredOverlay {
@@ -65,10 +71,6 @@ video {
   height: 100%;
 }
 
-.titleSection video {
-  width: 60%;
-}
-
 .horizontalList {
   display: flex;
   justify-content: center;
@@ -85,4 +87,24 @@ video {
 .horizontalList img {
   height: 3em;
   width: 3em;
+}
+
+#navBar {
+  z-index: 100;
+  color: black;
+  background-color: rgba(228, 228, 228, 0.582);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+#navBar a {
+  padding: 2em;
+}
+#navBar a, #navBar a:visited {
+  text-decoration: none;
+  color: inherit;
 }/*# sourceMappingURL=App.css.map */

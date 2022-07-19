@@ -19,7 +19,6 @@ function App() {
 
   return(
     <div className='App'>
-      <NavBar/>
       {loading ? (
         /* Page Loader Start*/
         <PageLoader/>
@@ -31,6 +30,7 @@ function App() {
           </Router>
         </div>
       )}
+
     </div>
   )
 }
