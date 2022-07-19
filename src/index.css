@@ -11,4 +11,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-y: scroll;
 }/*# sourceMappingURL=index.css.map */
