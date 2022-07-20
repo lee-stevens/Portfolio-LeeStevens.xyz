@@ -57,9 +57,9 @@ const Home = () => {
                 <div className="headerSection"><h1>Web Development - React & ThreeJS</h1></div>
                 <div className="contentSection">
                     <div className="tileContainer"> 
-                    <a href="/"><img className="tileItem" id="item1" src="../public/images/icon - ls.jpg"/></a>
-                    <a href="/"><img className="tileItem" id="item2" src="../public/images/icon - ls.jpg"/></a>
-                    <a href="/"><img className="tileItem" id="item3"  src="../public/images/icon - ls.jpg"/></a>
+                    <a href="/"><img className="tileItem" id="item1" src="./images/icon - ls.jpg"/></a>
+                    <a href="/"><img className="tileItem" id="item2" src="./images/icon - ls.jpg"/></a>
+                    <a href="/"><img className="tileItem" id="item3"  src="./images/icon - ls.jpg"/></a>
                 </div>
                 </div>
             </section>
@@ -68,9 +68,9 @@ const Home = () => {
                 <div className="headerSection"><h1 >Game Development - Unity</h1></div>
                 <div className="contentSection">
                     <div className="tileContainer"> 
-                        <a href="/Unity-Wildlands"><img className="tileItem" src="../public/images/icon - ls.jpg"/></a>
-                        <a href="/Unity-Epsilon"><img className="tileItem" src="../public/images/icon - ls.jpg"/></a>
-                        <a href="/React-Portfolio"><img className="tileItem" src="../public/images/icon - ls.jpg"/></a>
+                        <a href="/Unity-Wildlands"><img className="tileItem" src="./images/icon - ls.jpg"/></a>
+                        <a href="/Unity-Epsilon"><img className="tileItem" src="./images/icon - ls.jpg"/></a>
+                        <a href="/React-Portfolio"><img className="tileItem" src="./images/icon - ls.jpg"/></a>
                     </div>
                 </div> 
             </section>
@@ -79,9 +79,9 @@ const Home = () => {
                 <div className="headerSection"><h1>Software Development - VBA</h1></div>
                 <div className="contentSection">
                     <div className="tileContainer"> 
-                        <a href="/Unity-Wildlands"><img className="tileItem" src="../public/images/icon - ls.jpg"/></a>
-                        <a href="/Unity-Epsilon"><img className="tileItem" src="../public/images/icon - ls.jpg"/></a>
-                        <a href="/React-Portfolio"><img className="tileItem" src="../public/images/icon - ls.jpg"/></a>
+                        <a href="/Unity-Wildlands"><img className="tileItem" src="./images/icon - ls.jpg"/></a>
+                        <a href="/Unity-Epsilon"><img className="tileItem" src="./images/icon - ls.jpg"/></a>
+                        <a href="/React-Portfolio"><img className="tileItem" src="./images/icon - ls.jpg"/></a>
                     </div>
                 </div>
             </section>
