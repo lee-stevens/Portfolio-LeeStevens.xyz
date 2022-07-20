@@ -6,19 +6,25 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: pink;
 }
 
 .headerSection{
-  background-color: rgba(201, 201, 201, 0.473);
   height: 5em;
+  display: flex;
   text-align: center;
-  background-color: red;
+  justify-content: center;
+}
+
+h1{
+  margin: 0;
 }
 
 .contentSection{
   min-height: 40vh;
-  background-color: lightblue;
+}
+
+.sectionDivider{
+  height: 5vh;
 }
 
 .titleSection{
@@ -58,8 +64,10 @@ body {
   align-items: center;
   
   .tileItem{
-    max-height: 250px;
+    max-height: 15em;
     background-color: lightgrey;
+    margin-left: 3em;
+    margin-right: 3em;
   }
  
   #item1:hover{
@@ -100,8 +108,7 @@ body {
 
 //Footer
 #footerSection{
-  margin-top: 3em;
-  margin-bottom: 3em;
+  height: 12em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,7 +126,7 @@ body {
   }
 
   img{
-    height: 3em;
-    width: 3em;
+    height: 5em;
+    width: 5em;
   }
 }

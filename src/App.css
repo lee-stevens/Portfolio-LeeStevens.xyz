@@ -6,19 +6,25 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: pink;
 }
 
 .headerSection {
-  background-color: rgba(201, 201, 201, 0.473);
   height: 5em;
+  display: flex;
   text-align: center;
-  background-color: red;
+  justify-content: center;
+}
+
+h1 {
+  margin: 0;
 }
 
 .contentSection {
   min-height: 40vh;
-  background-color: lightblue;
+}
+
+.sectionDivider {
+  height: 5vh;
 }
 
 .titleSection .headerImage {
@@ -52,8 +58,10 @@ body {
   align-items: center;
 }
 .tileContainer .tileItem {
-  max-height: 250px;
+  max-height: 15em;
   background-color: lightgrey;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 .tileContainer #item1:hover {
   filter: drop-shadow(0 0 2em rgba(161, 239, 253, 0.9921568627));
@@ -88,8 +96,7 @@ body {
 }
 
 #footerSection {
-  margin-top: 3em;
-  margin-bottom: 3em;
+  height: 12em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -105,6 +112,6 @@ body {
   display: inline;
 }
 #footerSection img {
-  height: 3em;
-  width: 3em;
+  height: 5em;
+  width: 5em;
 }/*# sourceMappingURL=App.css.map */

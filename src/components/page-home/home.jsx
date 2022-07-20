@@ -47,24 +47,19 @@ const Home = () => {
                 </div>
             </section>
 
+            <div className="sectionDivider"></div>
+
             <motion.div initial="initial" animate="animate" exit="exit"
             variants={contentSectionAnimation} 
             transition={{ duration: 2}}>
-            <section ref={sectionAbout}>
-                <div className="headerSection"><h1>About Me</h1></div>
-                <div className="contentSection">
-                    
-                </div>
-            </section>
-        
 
             <section ref={sectionWebDev}>
                 <div className="headerSection"><h1>Web Development - React & ThreeJS</h1></div>
                 <div className="contentSection">
                     <div className="tileContainer"> 
-                    <a href="/"><img className="tileItem" src="../public/images/icon - ls.jpg"/></a>
-                    <a href="/"><img className="tileItem" src="../public/images/icon - ls.jpg"/></a>
-                    <a href="/"><img className="tileItem" src="../public/images/icon - ls.jpg"/></a>
+                    <a href="/"><img className="tileItem" id="item1" src="../public/images/icon - ls.jpg"/></a>
+                    <a href="/"><img className="tileItem" id="item2" src="../public/images/icon - ls.jpg"/></a>
+                    <a href="/"><img className="tileItem" id="item3"  src="../public/images/icon - ls.jpg"/></a>
                 </div>
                 </div>
             </section>

@@ -18,17 +18,18 @@ function App() {
 
   return(
     <div className='App'>
-      {loading ? (
-        /* Page Loader Start*/
+      {loading ? 
+      (
         <PageLoader/>
-        /* Page Loader End */
-      ) : (
-          <Router>
-            <PageRouter/>
-          </Router>
+      )
+      : 
+      (
+        <Router>
+          <PageRouter/>
+        </Router>
       )}
     </div>
   )
 }
 
-export default App
+ export default App
