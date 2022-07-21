@@ -1,13 +1,26 @@
 import './index.css'
 import { motion } from 'framer-motion'
-import { pageAnimation } from "../frameranimations/frameranimations"
+import { navBarAnimation, pageAnimation } from "../frameranimations/frameranimations"
 
 const Unity_Wildlands = () => {
     return (
+        <main>
+        <motion.div 
+        variants={navBarAnimation} 
+        transition={{ duration: 4}}
+        initial="initial" animate="animate" exit="exit"
+        >
+        <section >
+            <nav id="navBar">
+                <a href="/"><button >Home</button></a>
+            </nav>
+        </section>
+        </motion.div>
+
         <motion.div initial="initial" animate="animate" exit="exit"
         variants={pageAnimation}
         transition={{ duration: 2}}>
-        <main>
+
             <section className="titleSection">
                 <div>
                     <video autoPlay muted loop>
@@ -19,8 +32,8 @@ const Unity_Wildlands = () => {
                 </div>
             </section>
 
-            <section>
-                <div className="sectionHeader">
+            <section className="contentSection">
+                <div >
                     <h1>Description</h1>
                 </div>
                 <div className="sectionContent">
@@ -38,8 +51,9 @@ const Unity_Wildlands = () => {
                     </p>
                 </div>
             </section>
+            </motion.div>
         </main>
-        </motion.div>
+        
     )
 }
 

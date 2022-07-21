@@ -24,53 +24,7 @@ h1 {
 }
 
 .sectionDivider {
-  height: 5vh;
-}
-
-.titleSection .headerImage {
-  margin-bottom: -0.5em;
-  z-index: -10;
-}
-.titleSection .headerImage h1 {
-  font-size: 5em;
-}
-.titleSection .headerImage h3 {
-  font-size: 2em;
-}
-.titleSection .headerImage img, .titleSection .headerImage video {
-  z-index: -1;
-  width: 100%;
-  max-height: 60vh;
-  margin-left: auto;
-  margin-right: auto;
-}
-.titleSection .headerImage .centeredOverlay {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.tileContainer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-.tileContainer .tileItem {
-  max-height: 15em;
-  background-color: lightgrey;
-  margin-left: 3em;
-  margin-right: 3em;
-}
-.tileContainer #item1:hover {
-  filter: drop-shadow(0 0 2em rgba(161, 239, 253, 0.9921568627));
-}
-.tileContainer #item2:hover {
-  filter: drop-shadow(0 0 2em #d7b2db);
-}
-.tileContainer #item3:hover {
-  filter: drop-shadow(0 0 2em rgba(164, 253, 161, 0.9921568627));
+  height: 10vh;
 }
 
 #navBar {
@@ -91,27 +45,35 @@ h1 {
   font-weight: 700;
 }
 #navBar button:hover {
-  background-color: rgb(114, 114, 114);
   cursor: pointer;
+  background-color: rgba(156, 212, 216, 0.623);
+}
+#navBar button:active {
+  background-color: rgba(112, 174, 185, 0.733);
 }
 
-#footerSection {
+#sectionContact {
+  background-color: lavender;
+}
+#sectionContact h1 {
+  transform: translate(10%, 50%);
+}
+#sectionContact #footerLinks {
   height: 12em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(201, 201, 201, 0.473);
 }
-#footerSection ul {
+#sectionContact #footerLinks ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-#footerSection li {
+#sectionContact #footerLinks li {
   padding-left: 3em;
   display: inline;
 }
-#footerSection img {
+#sectionContact #footerLinks img {
   height: 5em;
   width: 5em;
 }/*# sourceMappingURL=App.css.map */
