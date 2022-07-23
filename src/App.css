@@ -10,13 +10,13 @@ body {
 
 .headerSection {
   height: 5em;
-  display: flex;
-  text-align: center;
-  justify-content: center;
 }
 
 h1 {
   margin: 0;
+  padding-top: 1em;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .contentSection {
@@ -29,7 +29,7 @@ h1 {
 
 #navBar {
   z-index: 100;
-  background-color: rgba(228, 228, 228, 0.801);
+  background-color: rgba(230, 230, 250, 0.623);
   overflow: hidden;
   display: flex;
   justify-content: center;

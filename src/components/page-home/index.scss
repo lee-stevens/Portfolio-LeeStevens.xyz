@@ -14,7 +14,7 @@
       img, video{
         z-index: -1;
         width: 100%;
-        max-height: 60vh;
+        height: 100vh;
         margin-left: auto;
         margin-right: auto;
       }
@@ -28,24 +28,48 @@
     }
   }
 
-.tileContainer{
+.tilesContainer{
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    
-    .tileItem{
-      max-height: 22vh;
-      background-color: lightgrey;
+    align-content: center;
+
+    .tileContainer{
       margin-left: 5vh;
       margin-right: 5vh;
+    }
+
+    .tileContent{
+      max-width: 30vw;
+      margin-top: 5vh;
+      overflow: hidden;
+      
+      h1, h2, h3, h4, h5, h6, p {
+        text-align: center;
+      }
+
+      li{
+        list-style: none;
+        float: center;
+      }
+
+    }
+
+    .tileImage{
+      max-width: 30vw;
+      background-color: lightgrey;
       border-radius: 25px;
+      transform: scale(1);
+      transition: all .5s ease-in-out;
     }
    
-    #item1:hover{
-      filter: drop-shadow(0 0 2em #77ebfffd);
+    #item1:hover, #item2:hover, #item3:hover{
       transform: scale(1.1);
       transition: all .5s ease-in-out;
+    }
+
+    #item1:hover{
+      filter: drop-shadow(0 0 2em #77ebfffd);
+      
     }
     #item2:hover{
       filter: drop-shadow(0 0 2em #d7b2db);

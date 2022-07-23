@@ -11,7 +11,7 @@
 .titleSection .headerImage img, .titleSection .headerImage video {
   z-index: -1;
   width: 100%;
-  max-height: 60vh;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
 }
@@ -22,27 +22,44 @@
   transform: translate(-50%, -50%);
 }
 
-.tileContainer {
+.tilesContainer {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
-.tileContainer .tileItem {
-  max-height: 22vh;
-  background-color: lightgrey;
+.tilesContainer .tileContainer {
   margin-left: 5vh;
   margin-right: 5vh;
-  border-radius: 25px;
 }
-.tileContainer #item1:hover {
-  filter: drop-shadow(0 0 2em rgba(119, 235, 255, 0.9921568627));
+.tilesContainer .tileContent {
+  max-width: 30vw;
+  margin-top: 5vh;
+  overflow: hidden;
+}
+.tilesContainer .tileContent h1, .tilesContainer .tileContent h2, .tilesContainer .tileContent h3, .tilesContainer .tileContent h4, .tilesContainer .tileContent h5, .tilesContainer .tileContent h6, .tilesContainer .tileContent p {
+  text-align: center;
+}
+.tilesContainer .tileContent li {
+  list-style: none;
+  float: center;
+}
+.tilesContainer .tileImage {
+  max-width: 30vw;
+  background-color: lightgrey;
+  border-radius: 25px;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+.tilesContainer #item1:hover, .tilesContainer #item2:hover, .tilesContainer #item3:hover {
   transform: scale(1.1);
   transition: all 0.5s ease-in-out;
 }
-.tileContainer #item2:hover {
+.tilesContainer #item1:hover {
+  filter: drop-shadow(0 0 2em rgba(119, 235, 255, 0.9921568627));
+}
+.tilesContainer #item2:hover {
   filter: drop-shadow(0 0 2em #d7b2db);
 }
-.tileContainer #item3:hover {
+.tilesContainer #item3:hover {
   filter: drop-shadow(0 0 2em rgba(164, 253, 161, 0.9921568627));
 }/*# sourceMappingURL=index.css.map */
