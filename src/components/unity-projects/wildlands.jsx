@@ -1,25 +1,15 @@
 import './index.css'
 import { motion } from 'framer-motion'
-import { navBarAnimation, pageAnimation } from "../frameranimations/frameranimations"
+import { pageAnimation } from "../frameranimations/frameranimations"
 
 const Unity_Wildlands = () => {
     return (
         <main>
-        <motion.div 
-        variants={navBarAnimation} 
-        transition={{ duration: 4}}
-        initial="initial" animate="animate" exit="exit"
-        >
         <section >
             <nav id="navBar">
                 <a href="/"><button >Home</button></a>
             </nav>
         </section>
-        </motion.div>
-
-        <motion.div initial="initial" animate="animate" exit="exit"
-        variants={pageAnimation}
-        transition={{ duration: 2}}>
 
             <section className="titleSection">
                 <div>
@@ -51,7 +41,6 @@ const Unity_Wildlands = () => {
                     </p>
                 </div>
             </section>
-            </motion.div>
         </main>
         
     )

@@ -3,14 +3,6 @@
       margin-bottom: -0.5em;
       z-index: -10;
     
-      h1{
-        font-size: 5em;
-      }
-     
-      h3{
-        font-size: 2em;
-      }
-    
       img, video{
         z-index: -1;
         width: 100%;
@@ -24,6 +16,12 @@
         top: 15%;
         left: 50%;
         transform: translate(-50%, -50%);
+
+
+        p{
+          font-size: 7rem;
+          line-height: 7rem;
+        }
       }
     }
   }

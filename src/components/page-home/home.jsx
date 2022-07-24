@@ -1,6 +1,6 @@
 import './index.css'
 import { motion } from "framer-motion"
-import { navBarAnimation, pageAnimation, contentSectionAnimation } from "../frameranimations/frameranimations"
+import { pageAnimation, contentSectionAnimation } from "../frameranimations/frameranimations"
 import { useRef } from 'react'
 
 
@@ -22,9 +22,7 @@ const Home = () => {
     return (
         <main>
 
-        <motion.div initial="initial" animate="animate" exit="exit"
-        variants={navBarAnimation} 
-        transition={{ duration: 4}}>
+
         <section>
             <nav id="navBar">
                 <button onClick={() => scrollToSection(headerSection)}>Home</button>
@@ -36,25 +34,21 @@ const Home = () => {
                 <a href="/"><button>Reload</button></a>
             </nav>
         </section>
-        </motion.div>
 
 
 
         <motion.div initial="initial" animate="animate" exit="exit"
         variants={pageAnimation}
         transition={{ duration: 2}}>
+
         <section ref={headerSection} className="titleSection">
             <div className="headerImage">
-                <img src="/images/background-b.jpg"></img>    
+                <img src="/images/background-b.jpg"></img>
+                <div className="centeredOverlay">
+                    <p>Lee Stevens</p>
+                </div>
             </div>
         </section>
-
-
-
-        <motion.div initial="initial" animate="animate" exit="exit"
-        variants={contentSectionAnimation} 
-        transition={{ duration: 2}}>
-
 
         <section className="wholePage" ref={sectionAbout}>
             <div className="headerSection"><h1 >Lee Stevens - About Me</h1></div>
@@ -154,8 +148,7 @@ const Home = () => {
 
         
         </motion.div>
-        </motion.div>  
-        </main>   
+       </main>   
     )
 }
 
