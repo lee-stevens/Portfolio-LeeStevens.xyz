@@ -5,10 +5,9 @@
 .titleSection .headerImage img, .titleSection .headerImage video {
   z-index: -1;
   width: 100%;
-  height: 100vh;
+  height: 60vh;
 }
 .titleSection .headerImage .centeredOverlay {
-  margin-top: 10em;
   position: absolute;
   top: 15%;
   left: 50%;
@@ -21,7 +20,7 @@
 }
 
 .wholePage {
-  height: 100vh;
+  height: 65em;
 }
 
 .tilesContainer {
@@ -33,7 +32,7 @@
   text-align: center;
 }
 .tilesContainer .tileImage {
-  width: 50%;
+  max-width: 20em;
   background-color: lightgrey;
   border-radius: 25px;
   transform: scale(1);
