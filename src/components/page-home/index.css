@@ -6,16 +6,16 @@
   z-index: -1;
   width: 100%;
   height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
 }
 .titleSection .headerImage .centeredOverlay {
+  margin-top: 10em;
   position: absolute;
   top: 15%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
-.titleSection .headerImage .centeredOverlay p {
+.titleSection .headerImage .centeredOverlay h1 {
   font-size: 7rem;
   line-height: 7rem;
 }
@@ -33,8 +33,7 @@
   text-align: center;
 }
 .tilesContainer .tileImage {
-  max-width: 50%;
-  max-height: 50%;
+  width: 50%;
   background-color: lightgrey;
   border-radius: 25px;
   transform: scale(1);
@@ -48,6 +47,10 @@
 .tilesContainer p {
   padding-left: 3em;
   padding-right: 3em;
+}
+.tilesContainer p ol {
+  padding-left: 8em;
+  padding-right: 8em;
 }
 .tilesContainer ul {
   padding: 0;
