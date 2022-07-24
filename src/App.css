@@ -8,23 +8,20 @@ body {
   min-height: 100vh;
 }
 
-.headerSection {
-  height: 5em;
+.pageSection {
+  height: 100vh;
 }
 
-h1 {
+.headerSection {
+  height: 10em;
+  background-color: lavender;
+  margin-bottom: 5em;
+}
+.headerSection h1 {
   margin: 0;
-  padding-top: 1em;
+  padding-top: 3em;
   text-align: center;
   vertical-align: middle;
-}
-
-.contentSection {
-  min-height: 40vh;
-}
-
-.sectionDivider {
-  height: 10vh;
 }
 
 #navBar {
@@ -55,25 +52,35 @@ h1 {
 #sectionContact {
   background-color: lavender;
 }
-#sectionContact h1 {
-  transform: translate(10%, 50%);
+#sectionContact #navHeader {
+  text-align: center;
+  vertical-align: middle;
+}
+#sectionContact #navHeader h1 {
+  padding-top: 1em;
+  padding-bottom: 0.5em;
 }
 #sectionContact #footerLinks {
-  height: 12em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 8em;
 }
 #sectionContact #footerLinks ul {
-  list-style-type: none;
-  margin: 0;
   padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-#sectionContact #footerLinks li {
-  padding-left: 3em;
-  display: inline;
+#sectionContact #footerLinks ul li {
+  padding-left: 2em;
+  padding-right: 2em;
 }
-#sectionContact #footerLinks img {
-  height: 5em;
-  width: 5em;
+#sectionContact #footerLinks ul li img {
+  height: 5;
+  width: 5rem;
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
+}
+#sectionContact #footerLinks ul li img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
 }/*# sourceMappingURL=App.css.map */

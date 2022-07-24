@@ -6,7 +6,7 @@
       h1{
         font-size: 5em;
       }
-    
+     
       h3{
         font-size: 2em;
       }
@@ -28,44 +28,68 @@
     }
   }
 
+  .wholePage{
+    height: 100vh;
+  }
+
 .tilesContainer{
-    display: flex;
-    justify-content: center;
-    align-content: center;
+  display: flex;
+  flex-wrap: wrap;
 
     .tileContainer{
-      margin-left: 5vh;
-      margin-right: 5vh;
-    }
-
-    .tileContent{
-      max-width: 30vw;
-      margin-top: 5vh;
-      overflow: hidden;
-      
-      h1, h2, h3, h4, h5, h6, p {
-        text-align: center;
-      }
-
-      li{
-        list-style: none;
-        float: center;
-      }
-
+      width: 50%;
+      text-align: center;
     }
 
     .tileImage{
-      max-width: 30vw;
+      max-width: 50%;
+      max-height: 50%;
       background-color: lightgrey;
       border-radius: 25px;
       transform: scale(1);
       transition: all .5s ease-in-out;
     }
+
+    .tileContent{
+      display: grid;
+      align-items: center;
+      justify-content: center;
+    }
+
+    p{
+      padding-left: 3em;
+      padding-right: 3em;
+    }
+
+    ul{
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      li{
+        margin-left: 0.3em;
+        margin-right: 0.3em;
+        padding: 0.3em;
+        list-style: none;
+        float: left;
+        border-style: solid;
+        border-radius: 10px;
+        transform: scale(1);
+        transition: all .5s ease-in-out;
+      }
+
+      li:hover{
+        transform: scale(1.05);
+        transition: all .5s ease-in-out;
+      }
+    }
+    
    
     #item1:hover, #item2:hover, #item3:hover{
       transform: scale(1.1);
       transition: all .5s ease-in-out;
-    }
+    } 
 
     #item1:hover{
       filter: drop-shadow(0 0 2em #77ebfffd);
