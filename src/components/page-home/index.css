@@ -26,17 +26,21 @@
 .tilesContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .tilesContainer .tileContainer {
-  width: 50%;
   text-align: center;
+  padding-left: 4em;
+  padding-right: 4em;
+  width: 33%;
 }
 .tilesContainer .tileImage {
-  max-width: 20em;
-  background-color: lightgrey;
+  display: block;
+  height: 20em;
   border-radius: 25px;
   transform: scale(1);
   transition: all 0.5s ease-in-out;
+  margin: auto;
 }
 .tilesContainer .tileContent {
   display: grid;
@@ -47,17 +51,13 @@
   padding-left: 3em;
   padding-right: 3em;
 }
-.tilesContainer p ol {
-  padding-left: 8em;
-  padding-right: 8em;
-}
-.tilesContainer ul {
+.tilesContainer .tileTags {
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.tilesContainer ul li {
+.tilesContainer .tileTags li {
   margin-left: 0.3em;
   margin-right: 0.3em;
   padding: 0.3em;
@@ -68,7 +68,7 @@
   transform: scale(1);
   transition: all 0.5s ease-in-out;
 }
-.tilesContainer ul li:hover {
+.tilesContainer .tileTags li:hover {
   transform: scale(1.05);
   transition: all 0.5s ease-in-out;
 }

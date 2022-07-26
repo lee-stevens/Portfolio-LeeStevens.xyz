@@ -63,10 +63,10 @@ const Home = () => {
             <div className="sectionContent">
                 <div className="tilesContainer">
                     <div className="tileContainer">
-                        <a href="/Unity-Wildlands"><img className="tileImage" id="item1" src="./images/icon - ls.jpg"/></a>
+                        <a href="/"><img className="tileImage" id="item1" src="./images/icon - react1.png"/></a>
                         <div className="tileContent">
                             <h2>Portfolio - ReactJS</h2>
-                            <ul>
+                            <ul className="tileTags">
                                 <li>Front-End</li>
                                 <li>ReactJS</li>
                                 <li>Framer-Motion</li>
@@ -81,10 +81,10 @@ const Home = () => {
                         </div> 
                     </div>
                     <div className="tileContainer">
-                        <a href="/"><img className="tileImage" id="item1" src="./images/icon - ls.jpg"/></a>
+                        <a href="https://leestevens-portfolio-three.netlify.app/"><img className="tileImage" id="item1" src="./images/icon - threejs.png"/></a>
                         <div className="tileContent">
                             <h2>Portfolio - Three.js</h2>
-                            <ul>
+                            <ul className="tileTags">
                                 <li>Front-End</li>
                                 <li>Three.js</li>
                                 <li>ReactJS</li>
@@ -110,10 +110,12 @@ const Home = () => {
             <div className="sectionContent">
                 <div className="tilesContainer">
                     <div className="tileContainer">
-                        <a href="/Unity-Wildlands"><img className="tileImage" id="item1" src="./images/icon - ls.jpg"/></a>
+                        <div className="tileImage">
+                            <a href="/Unity-Wildlands"><img className="tileImage" id="item1" src="./images/ice - square.png"/></a>
+                        </div>
                         <div className="tileContent">
                             <h2>Wildlands</h2>
-                            <ul>
+                            <ul className="tileTags">
                                 <li>Unity</li>
                                 <li>C#</li>
                                 <li>Python</li>                                
@@ -132,10 +134,11 @@ const Home = () => {
                         </div> 
                     </div>
                     <div className="tileContainer">
-                        <a href="/"><img className="tileImage" id="item1" src="./images/icon - ls.jpg"/></a>
-                        <div className="tileContent">
+                        <div className="tileImage">
+                            <a href="/"><img className="tileImage" id="item1" src="./images/icon - unity.png"/></a>
+                        </div><div className="tileContent">
                             <h2>Project Epsilon</h2>
-                            <ul>
+                            <ul className="tileTags">
                                 <li>Unity</li>
                                 <li>C#</li>
                                 <li>Python</li>
@@ -159,10 +162,10 @@ const Home = () => {
             <div className="sectionContent">
                 <div className="tilesContainer">
                     <div className="tileContainer">
-                        <a href="/Unity-Wildlands"><img className="tileImage" id="item1" src="./images/icon - ls.jpg"/></a>
+                        <a href="/"><img className="tileImage" id="item1" src="./images/icon - vs.png"/></a>
                         <div className="tileContent">
                             <h2>File Automation</h2>
-                            <ul>
+                            <ul className="tileTags">
                                 <li>VBA</li>
                                 <li>Excel</li>
                                 <li>Microsoft 365</li>
@@ -175,10 +178,10 @@ const Home = () => {
                         </div> 
                     </div>
                     <div className="tileContainer">
-                        <a href="/"><img className="tileImage" id="item1" src="./images/icon - ls.jpg"/></a>
+                        <a href="/"><img className="tileImage" id="item1" src="./images/icon - vs.png"/></a>
                         <div className="tileContent">
                             <h2>Invoice Generators</h2>
-                            <ul>
+                            <ul className="tileTags">
                                 <li>VBA</li>
                                 <li>Excel</li>
                                 <li>Word</li>
