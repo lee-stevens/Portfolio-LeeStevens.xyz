@@ -63,7 +63,7 @@ const Home = () => {
             <div className="sectionContent">
                 <div className="tilesContainer">
                     <div className="tileContainer">
-                        <a href="/"><img className="tileImage" id="item1" src="./images/icon - react1.png"/></a>
+                        <a href="/"><img className="tileImage" id="item1" src="./images/icons/react1.png"/></a>
                         <div className="tileContent">
                             <h2>Portfolio - ReactJS</h2>
                             <ul className="tileTags">
@@ -81,7 +81,7 @@ const Home = () => {
                         </div> 
                     </div>
                     <div className="tileContainer">
-                        <a href="https://leestevens-portfolio-three.netlify.app/"><img className="tileImage" id="item1" src="./images/icon - threejs.png"/></a>
+                        <a href="https://leestevens-portfolio-three.netlify.app/"><img className="tileImage" id="item1" src="./images/icons/threejs.png"/></a>
                         <div className="tileContent">
                             <h2>Portfolio - Three.js</h2>
                             <ul className="tileTags">
@@ -111,7 +111,7 @@ const Home = () => {
                 <div className="tilesContainer">
                     <div className="tileContainer">
                         <div className="tileImage">
-                            <a href="/Unity-Wildlands"><img className="tileImage" id="item1" src="./images/ice - square.png"/></a>
+                            <a href="/Unity-Wildlands"><img className="tileImage" id="item1" src="./images/wildlands/ice - square.png"/></a>
                         </div>
                         <div className="tileContent">
                             <h2>Wildlands</h2>
@@ -135,7 +135,7 @@ const Home = () => {
                     </div>
                     <div className="tileContainer">
                         <div className="tileImage">
-                            <a href="/"><img className="tileImage" id="item1" src="./images/icon - unity.png"/></a>
+                            <a href="/"><img className="tileImage" id="item1" src="./images/icons/unity.png"/></a>
                         </div><div className="tileContent">
                             <h2>Project Epsilon</h2>
                             <ul className="tileTags">
@@ -162,7 +162,7 @@ const Home = () => {
             <div className="sectionContent">
                 <div className="tilesContainer">
                     <div className="tileContainer">
-                        <a href="/"><img className="tileImage" id="item1" src="./images/icon - vs.png"/></a>
+                        <a href="/"><img className="tileImage" id="item1" src="./images/icons/excel.png"/></a>
                         <div className="tileContent">
                             <h2>File Automation</h2>
                             <ul className="tileTags">
@@ -178,7 +178,7 @@ const Home = () => {
                         </div> 
                     </div>
                     <div className="tileContainer">
-                        <a href="/"><img className="tileImage" id="item1" src="./images/icon - vs.png"/></a>
+                        <a href="/"><img className="tileImage" id="item1" src="./images/icons/excel.png"/></a>
                         <div className="tileContent">
                             <h2>Invoice Generators</h2>
                             <ul className="tileTags">
@@ -205,9 +205,9 @@ const Home = () => {
             
             <nav id="footerLinks"> 
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/lee-stevens-dev/"><img src="images/icon - linkedin.png"></img></a></li>
-                    <li><a href="https://github.com/leesprojects"><img src="images/icon - github.png"></img></a></li>
-                    <li><a href="mailto:leepeterstevens@gmail.com"><img src="images/icon - email.png"></img></a></li>
+                    <li><a href="https://www.linkedin.com/in/lee-stevens-dev/"><img src="images/icons/linkedin.png"></img></a></li>
+                    <li><a href="https://github.com/leesprojects"><img src="images/icons/github.png"></img></a></li>
+                    <li><a href="mailto:leepeterstevens@gmail.com"><img src="images/icons/email.png"></img></a></li>
                 </ul>
             </nav>
         </footer>
