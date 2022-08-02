@@ -7,7 +7,7 @@ import './App.css'
 
 function App() {
   const [loading, setLoading] = useState(false);
-  const loadTime = 2500;
+  const loadTime = 1500;
 
   useEffect(() => {
     setLoading(true);

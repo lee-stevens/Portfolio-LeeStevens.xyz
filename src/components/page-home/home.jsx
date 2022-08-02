@@ -1,6 +1,6 @@
 import './index.css'
 import { motion } from "framer-motion"
-import { pageAnimation, contentSectionAnimation } from "../frameranimations/frameranimations"
+import { pageAnimation } from "../frameranimations/frameranimations"
 import { useRef } from 'react'
 
 
@@ -31,7 +31,6 @@ const Home = () => {
                 <button onClick={() => scrollToSection(sectionGameDev)}>Game Dev</button>
                 <button onClick={() => scrollToSection(sectionVBA)}>VBA</button>
                 <button onClick={() => scrollToSection(sectionContact)}>Contact</button>
-                <a href="/"><button>Reload</button></a>
             </nav>
         </section>
 
@@ -43,65 +42,29 @@ const Home = () => {
 
         <section ref={headerSection} className="titleSection">
             <div className="headerImage">
-                <img src="/images/background-b.jpg"></img>
+                <img src="/images/zephyr/zephyr1.png"></img>
                 <div className="centeredOverlay">
                     <h1>Lee Stevens</h1>
-                    <p>Scroll down or use the navigation bar.</p>
                 </div>
             </div>
         </section>
 
-        <section className="wholePage" ref={sectionAbout}>
-            <div className="headerSection"><h1 >Lee Stevens - About Me</h1></div>
-        </section>
-            
-
-
-        <section className="wholePage" ref={sectionWebDev}>
-            <div className="headerSection"><h1 >Web Development</h1></div>
-            
+        <section className="sectionAboutMe" ref={sectionAbout}>
+            <div className="headerSection"><h1>About Me</h1></div>
             <div className="sectionContent">
                 <div className="tilesContainer">
                     <div className="tileContainer">
-                        <a href="/"><img className="tileImage" id="item1" src="./images/icons/react1.png"/></a>
                         <div className="tileContent">
-                            <h2>Portfolio - ReactJS</h2>
-                            <ul className="tileTags">
-                                <li>Front-End</li>
-                                <li>ReactJS</li>
-                                <li>Framer-Motion</li>
-                                <li>SCSS</li>
-                                <li>Routers</li>
-                            </ul>
                             <p>
-                                This website portfolio was my first project in the world of Web Development. <br/>
-                                I learned the basics of HTML and CSS and soon after found ReactJS.<br/>
-                                With a background in C#, I loved the syntax of ReactJS especially it's OOP features<br/>
+                                My name is Lee Stevens and I am a programmer based in London. <br/>
+                                 I currently work as a VBA developer at Audit Intelligence where my main goal is to automate our daily processes. 
                             </p>
-                        </div> 
-                    </div>
-                    <div className="tileContainer">
-                        <a href="https://leestevens-portfolio-three.netlify.app/"><img className="tileImage" id="item1" src="./images/icons/threejs.png"/></a>
-                        <div className="tileContent">
-                            <h2>Portfolio - Three.js</h2>
-                            <ul className="tileTags">
-                                <li>Front-End</li>
-                                <li>Three.js</li>
-                                <li>ReactJS</li>
-                                <li>React-Three-Fiber</li>
-                            </ul>
-                            <p>
-                                After developing this portfolio in ReactJS I wanted to try something completely different<br/>
-                                I found that you could make 3D interactive websites using ThreeJS and that you can
-                                integrate ReactJS using React-Three-Fiber. I knew
-                                I was right at home since it was so similar to Unity Game Development<br/>
-                            </p>
-                        </div> 
+                        </div>
                     </div>
                 </div>
-            </div> 
+            </div>
         </section>
-
+            
 
 
         <section className="wholePage" ref={sectionGameDev}>
@@ -111,7 +74,28 @@ const Home = () => {
                 <div className="tilesContainer">
                     <div className="tileContainer">
                         <div className="tileImage">
-                            <a href="/Unity-Wildlands"><img className="tileImage" id="item1" src="./images/wildlands/ice - square.png"/></a>
+                            <a><img className="tileImage" id="item1" src="./images/icons/unity.png"/></a>
+                        </div><div className="tileContent">
+                            <h2>Project Zephyr</h2>
+                            <ul className="tileTags">
+                                <li>Unity</li>
+                                <li>C#</li>
+                                <li>Physics</li>
+                            </ul>
+                            <h3>
+                                In-Development
+                            </h3>
+                            <p> 
+                                Zephyr is a survival city builder game based in the clouds. With nothing but a simple ship, the hero must 
+                                harvest resources from floating islands, defeat enemies and trade with their inhabitants in order to build
+                                a fortress strong enough to one day, reclaim their throne. 
+                            </p>
+                        </div> 
+                    </div>
+
+                    <div className="tileContainer">
+                        <div className="tileImage">
+                            <a><img className="tileImage" id="item1" src="./images/wildlands/ice - square.png"/></a>
                         </div>
                         <div className="tileContent">
                             <h2>Wildlands</h2>
@@ -133,20 +117,52 @@ const Home = () => {
                             
                         </div> 
                     </div>
+                    
+                </div>
+            </div> 
+        </section>
+        
+
+
+        <section className="wholePage" ref={sectionWebDev}>
+            <div className="headerSection"><h1 >Web Development</h1></div>
+            
+            <div className="sectionContent">
+                <div className="tilesContainer">
                     <div className="tileContainer">
-                        <div className="tileImage">
-                            <a href="/"><img className="tileImage" id="item1" src="./images/icons/unity.png"/></a>
-                        </div><div className="tileContent">
-                            <h2>Project Epsilon</h2>
+                        <a><img className="tileImage" id="item1" src="./images/icons/react1.png"/></a>
+                        <h2>Portfolio - ReactJS</h2>
+                        <ul className="tileTags">
+                            <li>Front-End</li>
+                            <li>ReactJS</li>
+                            <li>Framer-Motion</li>
+                            <li>SCSS</li>
+                            <li>Routers</li>
+                        </ul>
+                        <p>
+                            This website was my first project in the world of Web Development.
+                            I learned the basics of HTML and CSS and soon after found ReactJS.
+                            With a background in C# I loved the syntax of ReactJS. I went through 
+                            many iterations and different designs before settling with this single 
+                            page layout.
+                        </p>
+                    </div>
+
+                    <div className="tileContainer">
+                        <div className="tileContent">
+                        <a href="https://leestevens-portfolio-three.netlify.app/"><img className="tileImage" id="item1" src="./images/icons/threejs.png"/></a>
+                            <h2>Portfolio - Three.js</h2>
                             <ul className="tileTags">
-                                <li>Unity</li>
-                                <li>C#</li>
-                                <li>Python</li>
-                                <li>Machine Learning</li>
-                                <li>3D Modelling</li>
+                                <li>Front-End</li>
+                                <li>Three.js</li>
+                                <li>ReactJS</li>
+                                <li>React-Three-Fiber</li>
                             </ul>
                             <p>
-                                Epsilon is a hobby project.<br/>
+                                After developing this portfolio in ReactJS I wanted to try something completely different<br/>
+                                I found that you could make 3D interactive websites using ThreeJS and that you can
+                                integrate ReactJS using React-Three-Fiber. I knew
+                                I was right at home since it was so similar to Unity Game Development<br/>
                             </p>
                         </div> 
                     </div>
@@ -156,13 +172,17 @@ const Home = () => {
 
 
 
+        
+
+
+
         <section className="wholePage" ref={sectionVBA}>
             <div className="headerSection"><h1 >VBA - Professional Work</h1></div>
             
             <div className="sectionContent">
                 <div className="tilesContainer">
                     <div className="tileContainer">
-                        <a href="/"><img className="tileImage" id="item1" src="./images/icons/excel.png"/></a>
+                        <a><img className="tileImage" id="item1" src="./images/icons/excel.png"/></a>
                         <div className="tileContent">
                             <h2>File Automation</h2>
                             <ul className="tileTags">
@@ -178,7 +198,7 @@ const Home = () => {
                         </div> 
                     </div>
                     <div className="tileContainer">
-                        <a href="/"><img className="tileImage" id="item1" src="./images/icons/excel.png"/></a>
+                        <a><img className="tileImage" id="item1" src="./images/icons/excel.png"/></a>
                         <div className="tileContent">
                             <h2>Invoice Generators</h2>
                             <ul className="tileTags">

@@ -8,22 +8,6 @@ body {
   min-height: 100vh;
 }
 
-.pageSection {
-  height: 100vh;
-}
-
-.headerSection {
-  height: 10em;
-  background-color: lavender;
-  margin-bottom: 5em;
-}
-.headerSection h1 {
-  margin: 0;
-  padding-top: 3em;
-  text-align: center;
-  vertical-align: middle;
-}
-
 #navBar {
   z-index: 100;
   background-color: rgba(230, 230, 250, 0.623);

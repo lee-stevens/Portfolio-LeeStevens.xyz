@@ -7,6 +7,7 @@
         z-index: -1;
         width: 100%;
         height: 60vh;
+        object-fit: cover;
 
       }
     
@@ -15,8 +16,7 @@
         top: 15%;
         left: 50%;
         transform: translate(-50%, -50%);
-        text-align: center;
-
+        text-align: contain;
 
         h1{
           font-size: 7rem;
@@ -26,20 +26,40 @@
     }
   }
 
+  .pageSection{
+    height: 100vh;
+  }
+  
+  .headerSection{
+    height: 10em;
+    background-color: lavender;
+    margin-bottom: 5em;
+  
+    h1{
+      margin: 0;
+      padding-top: 3em;
+      text-align: center;
+      vertical-align: middle;
+    }
+  }
+
+  .sectionAboutMe{
+    min-height: 40vh;
+  }
+
   .wholePage{
-    height: 65em;
+    min-height: 90vh;
   }
 
 .tilesContainer{
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 
     .tileContainer{
       text-align: center;
       padding-left: 4em;
       padding-right: 4em;
-      width: 33%;
+      width: 35em;
     }
 
     .tileImage{
@@ -49,13 +69,6 @@
       transform: scale(1);
       transition: all .5s ease-in-out;
       margin: auto;
-
-    }
-
-    .tileContent{
-      display: grid;
-      align-items: center;
-      justify-content: center;
     }
 
     p{
