@@ -52,12 +52,21 @@ const Home = () => {
         <section className="sectionAboutMe" ref={sectionAbout}>
             <div className="headerSection"><h1>About Me</h1></div>
             <div className="sectionContent">
-                <div className="tilesContainer">
-                    <div className="tileContainer">
+                <div className="tilesContainer" style={{marginTop: "-5em"}}>
+                    <div className="tileContainer" style={{width: "100em"}}>
                         <div className="tileContent">
+                            <h3>Job Search Status: I am currently looking for work</h3>
                             <p>
+                                <br/>
                                 My name is Lee Stevens and I am a programmer based in London. <br/>
-                                 I currently work as a VBA developer at Audit Intelligence where my main goal is to automate our daily processes. 
+                                I currently work as a VBA developer 3 days a week, and a solo Unity Developer for the other 4. 
+                                <br/>
+                                <br/>
+                                Since graduating from Brunel University with a BSc in Computer Science and an MA in Game Development, to the projects at my current job, <br/>I've had the priviledge of experiencing programming in many different capacities.
+                                <br/>
+                                 I'm now looking for the best learning opportunity to settle down and learn from the best.
+                                 <br/> <br/>
+                                 This website is still in development so I apologise if it's missing sections you're looking for, I'm happy to get in contact and fill in the blanks :)
                             </p>
                         </div>
                     </div>
