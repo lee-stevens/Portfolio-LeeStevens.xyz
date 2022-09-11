@@ -34,8 +34,6 @@ const Home = () => {
             </nav>
         </section>
 
-
-
         <motion.div initial="initial" animate="animate" exit="exit"
         variants={pageAnimation}
         transition={{ duration: 2}}>
@@ -83,7 +81,7 @@ const Home = () => {
                 <div className="tilesContainer">
                     <div className="tileContainer">
                         <div className="tileImage">
-                            <a><img className="tileImage" id="item1" src="./images/icons/unity.png"/></a>
+                            <a><img className="tileImage" id="item1" src="/images/zephyr/zephyr1.png"/></a>
                         </div><div className="tileContent">
                             <h2>Project Zephyr</h2>
                             <ul className="tileTags">
