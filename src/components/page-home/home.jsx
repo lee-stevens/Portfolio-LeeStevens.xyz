@@ -40,10 +40,6 @@ const Home = () => {
 
         <section ref={headerSection} className="titleSection">
             <div className="headerImage">
-                <img src="/images/zephyr/zephyr1.png"></img>
-                <div className="centeredOverlay">
-                    <h1>Lee Stevens</h1>
-                </div>
             </div>
         </section>
 
@@ -81,7 +77,7 @@ const Home = () => {
                 <div className="tilesContainer">
                     <div className="tileContainer">
                         <div className="tileImage">
-                            <a><img className="tileImage" id="item1" src="/images/zephyr/zephyr1.png"/></a>
+                            <a><img className="tileImage" id="item1" src="/images/zephyr/main-1.png"/></a>
                         </div><div className="tileContent">
                             <h2>Project Zephyr</h2>
                             <ul className="tileTags">
@@ -102,7 +98,7 @@ const Home = () => {
 
                     <div className="tileContainer">
                         <div className="tileImage">
-                            <a><img className="tileImage" id="item1" src="./images/wildlands/ice - square.png"/></a>
+                            <a><img className="tileImage" id="item1" src="./images/wildlands/minigame-ice.png"/></a>
                         </div>
                         <div className="tileContent">
                             <h2>Wildlands</h2>
@@ -137,7 +133,7 @@ const Home = () => {
             <div className="sectionContent">
                 <div className="tilesContainer">
                     <div className="tileContainer">
-                        <a><img className="tileImage" id="item1" src="./images/icons/react1.png"/></a>
+                        <a><img className="tileImage" id="item1" src="./images/icons/react-1.png"/></a>
                         <h2>Portfolio - ReactJS</h2>
                         <ul className="tileTags">
                             <li>Front-End</li>
@@ -189,7 +185,7 @@ const Home = () => {
             <div className="sectionContent">
                 <div className="tilesContainer">
                     <div className="tileContainer">
-                        <a><img className="tileImage" id="item1" src="./images/icons/excel.png"/></a>
+                        <a><img className="tileImage" id="item1" src="/images/icons/vba.png"/></a>
                         <div className="tileContent">
                             <h2>File Automation</h2>
                             <ul className="tileTags">
@@ -205,7 +201,7 @@ const Home = () => {
                         </div> 
                     </div>
                     <div className="tileContainer">
-                        <a><img className="tileImage" id="item1" src="./images/icons/excel.png"/></a>
+                        <a><img className="tileImage" id="item1" src="/images/icons/vba.png"/></a>
                         <div className="tileContent">
                             <h2>Invoice Generators</h2>
                             <ul className="tileTags">
@@ -234,7 +230,7 @@ const Home = () => {
                 <ul>
                     <li><a href="https://www.linkedin.com/in/lee-stevens-dev/"><img src="images/icons/linkedin.png"></img></a></li>
                     <li><a href="https://github.com/leesprojects"><img src="images/icons/github.png"></img></a></li>
-                    <li><a href="mailto:leepeterstevens@gmail.com"><img src="images/icons/email.png"></img></a></li>
+                    <li><a href="mailto:leepeterstevens@gmail.com">Leepeterstevens@gmail.com</a></li>
                 </ul>
             </nav>
         </footer>

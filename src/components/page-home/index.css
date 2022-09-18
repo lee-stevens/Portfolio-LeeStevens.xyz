@@ -51,14 +51,19 @@
 }
 .tilesContainer .tileContainer {
   text-align: center;
-  padding-left: 4em;
-  padding-right: 4em;
+  margin-left: 4em;
+  padding-left: 2em;
+  padding-right: 2em;
   width: 35em;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
 }
 .tilesContainer .tileImage {
+  padding-top: 2em;
   display: block;
-  height: 20em;
-  width: 20em;
+  height: 12em;
+  max-width: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
   border-radius: 25px;
   transform: scale(1);
   transition: all 0.5s ease-in-out;
