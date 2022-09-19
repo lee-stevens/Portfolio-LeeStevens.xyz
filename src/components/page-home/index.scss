@@ -1,15 +1,24 @@
+//Colors
+$color-primary: rgb(235, 220, 245);
+$color-secondary: rgb(169, 217, 233);
+$color-primary-faded: rgba(230, 230, 250, 0.7);
+$color-secondary-faded: rgba(169, 217, 233, 0.7);
+
+//Component Dimensions
+$navbar-height: 3em;
+
+//Sections
 section {
-  margin: 10em 0em 10em;
   min-height: 50vh;
 }
 
-.pageSection{
-  height: 100vh;
+.section-content {
+  margin: 5em 5em 5em;
 }
 
-.headerSection{
+.section-header{
   height: 4em;
-  background-color: lavender;
+  background-color: $color-secondary-faded;
 
   h1{
     margin: 0;
@@ -18,76 +27,72 @@ section {
     vertical-align: middle;
   }
 }
+//Sections End
 
-.tilesContainer{
+//Cards Start
+.cards-container{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 3em;
-  padding: 0em 2em 0em;
 
-    .tileContainer{
-      text-align: center;
-      margin: 0em 1em 0em;
-      padding: 1em 1em 1em;
-      width: 35em;
-      box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+  p{
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .card-container{
+    text-align: center;
+    margin: 1em 1em 1em;
+    padding: 1em 1em 1em;
+    width: 35em;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 5px -1px, rgba(0, 0, 0, 0.14) 0px 6px 10px 0px, rgba(0, 0, 0, 0.12) 0px 1px 18px 0px;
+  }
+  
+  .card-img{
+    display: block;
+    height: 12em;
+    max-width: auto;
+    object-fit:contain;
+    border-radius: 25px;
+    transform: scale(1);
+    transition: all .5s ease-in-out;
+    margin: 2em auto;
+  }
+  
+  .card-img:hover {
+    filter: drop-shadow(0 0 2em $color-secondary);
+  }
+  
+  .card-tags{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    .card-tags:hover{
+      cursor: none;
     }
 
-    .tileImage{
-      display: block;
-      height: 12em;
-      max-width: auto;
-      object-fit:contain;
-      border-radius: 25px;
+    li{
+      margin-left: 0.3em;
+      margin-right: 0.3em;
+      padding: 0.3em;
+      list-style: none;
+      float: left;
+      border-style: solid;
+      border-radius: 10px;
       transform: scale(1);
       transition: all .5s ease-in-out;
-      margin: 2em auto;
     }
-
-    p{
-      padding-left: 3em;
-      padding-right: 3em;
-    }
-
-    .tileTags{
-      padding: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      li{
-        margin-left: 0.3em;
-        margin-right: 0.3em;
-        padding: 0.3em;
-        list-style: none;
-        float: left;
-        border-style: solid;
-        border-radius: 10px;
-        transform: scale(1);
-        transition: all .5s ease-in-out;
-      }
-
-      li:hover{
-        transform: scale(1.05);
-        transition: all .5s ease-in-out;
-      }
-    }
-    
-   
-    #item1:hover, #item2:hover, #item3:hover{
-      transform: scale(1.1);
+  
+    li:hover{
+      transform: scale(1.05);
+      background-color: $color-secondary-faded;
       transition: all .5s ease-in-out;
-    } 
-
-    #item1:hover{
-      filter: drop-shadow(0 0 2em #77ebfffd);
-      
-    }
-    #item2:hover{
-      filter: drop-shadow(0 0 2em #d7b2db);
-    }
-    #item3:hover{
-      filter: drop-shadow(0 0 2em #a4fda1fd);
     }
   }
+}
+    
+
+//Cards End
   

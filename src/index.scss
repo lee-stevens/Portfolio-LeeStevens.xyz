@@ -17,4 +17,8 @@
 
 body{
     overflow-y: scroll; //Always enable y scrollbar
+    min-width: 800px;
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
 }

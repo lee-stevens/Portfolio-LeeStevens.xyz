@@ -1,17 +1,7 @@
-#root {
-  min-width: 1080px;
-}
-
-body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
 #navBar {
-  z-index: 100;
-  background-color: rgba(230, 230, 250, 0.623);
-  overflow: hidden;
+  height: 3em;
+  z-index: 5;
+  background-color: rgba(230, 230, 250, 0.7);
   display: flex;
   justify-content: center;
   position: fixed;
@@ -27,7 +17,7 @@ body {
 }
 #navBar button:hover {
   cursor: pointer;
-  background-color: rgba(156, 212, 216, 0.623);
+  background-color: rgba(156, 212, 216, 0.219);
 }
 #navBar button:active {
   background-color: rgba(112, 174, 185, 0.733);

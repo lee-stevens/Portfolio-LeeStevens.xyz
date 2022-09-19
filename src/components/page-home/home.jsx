@@ -5,7 +5,6 @@ import { useRef } from 'react'
 
 
 const Home = () => {
-    const headerSection = useRef(null);
     const sectionAbout = useRef(null);
     const sectionGameDev = useRef(null);
     const sectionWebDev = useRef(null);
@@ -14,7 +13,7 @@ const Home = () => {
     
     const scrollToSection = (elementRef) => {
         window.scrollTo({
-            top: elementRef.current.offsetTop,
+            top: elementRef.current.offsetTop - 48,
             behavior: "smooth"
         })
     }
@@ -25,7 +24,6 @@ const Home = () => {
 
     
         <nav id="navBar">
-            <button onClick={() => scrollToSection(headerSection)}>Home</button>
             <button onClick={() => scrollToSection(sectionAbout)}>About Me</button>
             <button onClick={() => scrollToSection(sectionWebDev)}>Web Dev</button>
             <button onClick={() => scrollToSection(sectionVBA)}>VBA</button>
@@ -39,23 +37,24 @@ const Home = () => {
         variants={pageAnimation}
         transition={{ duration: 2}}>
 
-        <section className="sectionAboutMe" ref={sectionAbout}>
-            <div className="sectionContent">
-                <div className="tilesContainer">
-                    <div className="tileContainer" style={{width: "70em"}}>
-                        <div className="tileContent">
-                            <h2>My name is Lee Stevens and I am a programmer based in London. </h2>
-                            <h3>Job Search Status | Looking For Web Development MEAN or MERN full-stack</h3><br/>
+        <section ref={sectionAbout}>
+            <div className="section-content">
+                <div className="cards-container">
+                    <div className="card-container" style={{width: "70em"}}>
+                        <h2>My name is Lee Stevens and I am a programmer based in London. </h2>
+                        <h3>Job Search Status | Looking For Web Development MEAN or MERN full-stack</h3><br/>
 
-                            <h3>Current Projects</h3>
-                                Inside-Work | 🔭<a href="https://forenzicswebapp2-sandbox.mxapps.io/">Forenzix Web App</a> for Audit Intelligence | Monday - Thursday<br/>
-                                Outside-Work | <a href="https://github.com/leesprojects/MEAN-LeesProjects">LeesProjects</a> | Afterwork & Friday to Sunday<br/><br/>
+                        <h3>Current Projects</h3>
+                            Inside-Work | 🔭<a href="https://forenzicswebapp2-sandbox.mxapps.io/">Forenzix Web App</a> for Audit Intelligence | Monday - Thursday<br/>
+                            Outside-Work | <a href="https://github.com/leesprojects/MEAN-LeesProjects">LeesProjects</a> | Afterwork & Friday to Sunday<br/><br/>
 
-                             <h3>About me</h3>
-                                Since graduating from Brunel University with a BSc in Computer Science and an MA in Game Development, to the projects at my current job,<br/>
-                                I've had the priviledge of experiencing programming in many different capacities. I'm now looking for the best learning opportunity to settle down and learn from the best. <br/>
-                                This website is still in development so I apologise if it's missing sections you're looking for, I'm happy to get in contact and fill in the blanks 🙂
-                        </div>
+                            <h3>About me</h3>
+                            I'm a recent graduate from Brunel University with a BSc in Computer Science and an MA in Game Development.<br/>
+                            My final 2 years of University was centered around C# and Unity game development. <br/><br/>
+                            
+                            Since graduating I have started working as a VBA and Web Developer at Audit Intelligence.<br/>
+                            However, I am on a team of one and rely on self-teaching to become a better programmer.<br/>
+                            That's why I am looking to join a talented team who can propel myself as a programmer whilst developing brilliant products.
                     </div>
                 </div>
             </div>
@@ -64,13 +63,14 @@ const Home = () => {
 
 
         <section ref={sectionWebDev}>
-            <div className="headerSection"><h1 >Web Development</h1></div>
-            <div className="sectionContent">
-                <div className="tilesContainer">
-                <div className="tileContainer">
-                        <a><img className="tileImage" id="item1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"/></a>
+            <div className="section-header"><h1>Web Development</h1></div>
+
+            <div className="section-content">
+                <div className="cards-container">
+                    <div className="card-container">
+                        <a href="https://github.com/leesprojects/MEAN-LeesProjects"><img className="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"/></a>
                         <h2>Lees Projects | MEAN</h2>
-                        <ul className="tileTags">
+                        <ul className="card-tags">
                             <li>Full-Stack</li>
                             <li>Angular</li>
                             <li>Express.js</li>
@@ -78,37 +78,49 @@ const Home = () => {
                             <li>MongoDB</li>
                         </ul>
                         <p>
-                            This website was my first project in the world of Web Development.
-                            I learned the basics of HTML and CSS and soon after found ReactJS.
-                            With a background in C# I loved the syntax of ReactJS. I went through 
-                            many iterations and different designs before settling with this single 
-                            page layout.
+                            This web app is built with MEAN full-stack, it's essentially an all-in-one website for everything I could need at home or on the go<br/>
+                            One sub-project is a flashcard system which I used for learning new languages and programming concepts!
                         </p>
                     </div>
 
-                    <div className="tileContainer">
-                        <a><img className="tileImage" id="item1" src="./images/icons/react-1.png"/></a>
+                    <div className="card-container">
+                        <a href=""><img className="card-img" src="./images/icons/react-1.png"/></a>
                         <h2>Portfolio | React.js</h2>
-                        <ul className="tileTags">
+                        <ul className="card-tags">
                             <li>Front-End</li>
-                            <li>ReactJS</li>
+                            <li>React.js</li>
                             <li>Framer-Motion</li>
                             <li>SCSS</li>
                         </ul>
                         <p>
-                            This website was my first project in the world of Web Development.
-                            I learned the basics of HTML and CSS and soon after found ReactJS.
-                            With a background in C# I loved the syntax of ReactJS. I went through 
-                            many iterations and different designs before settling with this single 
-                            page layout.
+                            My first portfolio built using React.js, it was my first step in becomming a web developer<br/>
+                            Since then I have learned a lot including MEAN and with this new knowledge, I recreated the portfolio with Angular right here!
                         </p>
                     </div>
 
-                    <div className="tileContainer">
-                        <div className="tileContent">
-                        <a href="https://leestevens-portfolio-three.netlify.app/"><img className="tileImage" id="item1" src="./images/icons/threejs.png"/></a>
+                    <div className="card-container">
+                        <a href="https://forenzicswebapp2-sandbox.mxapps.io/"><img className="card-img" src="https://avatars.githubusercontent.com/u/133443?s=280&v=4"/></a>
+                        <h2>Forenzix Web</h2>
+                        <ul className="card-tags">
+                            <li>Mendix</li>
+                            <li>Java</li>
+                            <li>SCSS</li>
+                            <li>JavaScript</li>
+                            <li>RDBMS</li>
+                        </ul>
+                        <p>
+                            A bespoke web application for the company Forenzix built using Mendix<br/>
+                            This was a 4-month long project and my first time building a large-scale web application for my company.<br/>
+                            I was commissioned to use a low-code web app so in the future, less experienced developers would be able to pick it up if I left.<br/>
+                            Although it's 'low-code', there was a lot of code involved, mainly SCSS, VBA and Java.
+                        </p>
+                    </div>
+
+                    <div className="card-container">
+                        <div className="cardContent">
+                        <a href="https://leestevens-portfolio-three.netlify.app/"><img className="card-img" src="./images/icons/threejs.png"/></a>
                             <h2>Portfolio | Three.js</h2>
-                            <ul className="tileTags">
+                            <ul className="card-tags">
                                 <li>Front-End</li>
                                 <li>Three.js</li>
                                 <li>ReactJS</li>
@@ -128,28 +140,41 @@ const Home = () => {
 
 
 
-        <section className="wholePage" ref={sectionVBA}>
-            <div className="headerSection"><h1 >VBA - Professional Work</h1></div>
+        <section ref={sectionVBA}>
+            <div className="section-header"><h1>VBA - Professional Work</h1></div>
             
-            <div className="sectionContent">
-                <div className="tilesContainer">
-                    <div className="tileContainer">
-                        <a><img className="tileImage" id="item1" src="/images/icons/vba.png"/></a>
-                        <div className="tileContent">
-                            <h2>File Automation</h2>
-                            <ul className="tileTags">
+            <div className="section-content">
+                <div className="cards-container">
+                    <div className="card-container">
+                        <a><img className="card-img" src="/images/icons/vba.png"/></a>
+                        <div className="cardContent">
+                            <h2>Litigation Calculators</h2>
+                            <ul className="card-tags">
                                 <li>VBA</li>
                                 <li>Excel</li>
-                                <li>Automation</li>                                
+                                <li>Motor Finance</li>
+                                <li>Mortgages</li>
+                                <li>Credit Cards</li>                                    
                             </ul>
-                            
                         </div> 
                     </div>
-                    <div className="tileContainer">
-                        <a><img className="tileImage" id="item1" src="/images/icons/vba.png"/></a>
-                        <div className="tileContent">
-                            <h2>Invoice Generators</h2>
-                            <ul className="tileTags">
+                    <div className="card-container">
+                        <a><img className="card-img" src="/images/icons/vba.png"/></a>
+                        <div className="cardContent">
+                            <h2>Internal File Management System</h2>
+                            <ul className="card-tags">
+                                <li>VBA</li>
+                                <li>Excel</li>
+                                <li>Sharepoint</li>
+                                <li>Automation</li>                                
+                            </ul>
+                        </div> 
+                    </div>
+                    <div className="card-container">
+                        <a><img className="card-img" src="/images/icons/vba.png"/></a>
+                        <div className="cardContent">
+                            <h2>Invoice Generators & Emailing</h2>
+                            <ul className="card-tags">
                                 <li>VBA</li>
                                 <li>Excel</li>
                                 <li>Word</li>
@@ -164,17 +189,17 @@ const Home = () => {
 
         
         <section ref={sectionGameDev}>
-            <div className="headerSection"><h1>Game Development</h1></div>
+            <div className="section-header"><h1>Game Development</h1></div>
             
-            <div className="sectionContent">
-                <div className="tilesContainer">
-                    <div className="tileContainer">
-                        <div className="tileContent">
-                            <div className="tileImage">
-                                <a><img className="tileImage" id="item1" src="/images/zephyr/main-1.png"/></a>
+            <div className="section-content">
+                <div className="cards-container">
+                    <div className="card-container">
+                        <div className="cardContent">
+                            <div className="card-img">
+                                <a><img className="card-img" src="/images/zephyr/main-1.png"/></a>
                             </div>
                             <h2>Project Zephyr</h2>
-                            <ul className="tileTags">
+                            <ul className="card-tags">
                                 <li>Unity</li>
                                 <li>C#</li>
                                 <li>Physics-Heavy</li>
@@ -189,13 +214,13 @@ const Home = () => {
                         </div> 
                     </div>
 
-                    <div className="tileContainer">
-                        <div className="tileContent">
-                            <div className="tileImage">
-                                <a><img className="tileImage" id="item1" src="./images/wildlands/minigame-ice.png"/></a>
+                    <div className="card-container">
+                        <div className="cardContent">
+                            <div className="card-img">
+                                <a><img className="card-img" src="./images/wildlands/minigame-ice.png"/></a>
                             </div>
                             <h2>Wildlands</h2>
-                            <ul className="tileTags">
+                            <ul className="card-tags">
                                 <li>Unity</li>
                                 <li>C#</li>
                                 <li>Python</li>

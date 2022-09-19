@@ -15,4 +15,8 @@
 
 body {
   overflow-y: scroll;
+  min-width: 800px;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
 }/*# sourceMappingURL=index.css.map */
