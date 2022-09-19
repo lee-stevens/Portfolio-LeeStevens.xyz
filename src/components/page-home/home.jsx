@@ -23,45 +23,38 @@ const Home = () => {
         <main>
 
 
-        <section>
-            <nav id="navBar">
-                <button onClick={() => scrollToSection(headerSection)}>Home</button>
-                <button onClick={() => scrollToSection(sectionAbout)}>About Me</button>
-                <button onClick={() => scrollToSection(sectionWebDev)}>Web Dev</button>
-                <button onClick={() => scrollToSection(sectionGameDev)}>Game Dev</button>
-                <button onClick={() => scrollToSection(sectionVBA)}>VBA</button>
-                <button onClick={() => scrollToSection(sectionContact)}>Contact</button>
-            </nav>
-        </section>
+    
+        <nav id="navBar">
+            <button onClick={() => scrollToSection(headerSection)}>Home</button>
+            <button onClick={() => scrollToSection(sectionAbout)}>About Me</button>
+            <button onClick={() => scrollToSection(sectionWebDev)}>Web Dev</button>
+            <button onClick={() => scrollToSection(sectionVBA)}>VBA</button>
+            <button onClick={() => scrollToSection(sectionGameDev)}>Game Dev</button>
+            <button onClick={() => scrollToSection(sectionContact)}>Contact</button>
+        </nav>
+        
+
 
         <motion.div initial="initial" animate="animate" exit="exit"
         variants={pageAnimation}
         transition={{ duration: 2}}>
 
-        <section ref={headerSection} className="titleSection">
-            <div className="headerImage">
-            </div>
-        </section>
-
         <section className="sectionAboutMe" ref={sectionAbout}>
-            <div className="headerSection"><h1>About Me</h1></div>
             <div className="sectionContent">
-                <div className="tilesContainer" style={{marginTop: "-5em"}}>
-                    <div className="tileContainer" style={{width: "100em"}}>
+                <div className="tilesContainer">
+                    <div className="tileContainer" style={{width: "70em"}}>
                         <div className="tileContent">
-                            <h3>Job Search Status: I am currently looking for work</h3>
-                            <p>
-                                <br/>
-                                My name is Lee Stevens and I am a programmer based in London. <br/>
-                                I currently work as a VBA developer 3 days a week, and a solo Unity Developer for the other 4. 
-                                <br/>
-                                <br/>
-                                Since graduating from Brunel University with a BSc in Computer Science and an MA in Game Development, to the projects at my current job, <br/>I've had the priviledge of experiencing programming in many different capacities.
-                                <br/>
-                                 I'm now looking for the best learning opportunity to settle down and learn from the best.
-                                 <br/> <br/>
-                                 This website is still in development so I apologise if it's missing sections you're looking for, I'm happy to get in contact and fill in the blanks :)
-                            </p>
+                            <h2>My name is Lee Stevens and I am a programmer based in London. </h2>
+                            <h3>Job Search Status | Looking For Web Development MEAN or MERN full-stack</h3><br/>
+
+                            <h3>Current Projects</h3>
+                                Inside-Work | 🔭<a href="https://forenzicswebapp2-sandbox.mxapps.io/">Forenzix Web App</a> for Audit Intelligence | Monday - Thursday<br/>
+                                Outside-Work | <a href="https://github.com/leesprojects/MEAN-LeesProjects">LeesProjects</a> | Afterwork & Friday to Sunday<br/><br/>
+
+                             <h3>About me</h3>
+                                Since graduating from Brunel University with a BSc in Computer Science and an MA in Game Development, to the projects at my current job,<br/>
+                                I've had the priviledge of experiencing programming in many different capacities. I'm now looking for the best learning opportunity to settle down and learn from the best. <br/>
+                                This website is still in development so I apologise if it's missing sections you're looking for, I'm happy to get in contact and fill in the blanks 🙂
                         </div>
                     </div>
                 </div>
@@ -70,77 +63,37 @@ const Home = () => {
             
 
 
-        <section className="wholePage" ref={sectionGameDev}>
-            <div className="headerSection"><h1>Game Development</h1></div>
-            
-            <div className="sectionContent">
-                <div className="tilesContainer">
-                    <div className="tileContainer">
-                        <div className="tileImage">
-                            <a><img className="tileImage" id="item1" src="/images/zephyr/main-1.png"/></a>
-                        </div><div className="tileContent">
-                            <h2>Project Zephyr</h2>
-                            <ul className="tileTags">
-                                <li>Unity</li>
-                                <li>C#</li>
-                                <li>Physics</li>
-                            </ul>
-                            <h3>
-                                In-Development
-                            </h3>
-                            <p> 
-                                Zephyr is a survival city builder game based in the clouds. With nothing but a simple ship, the hero must 
-                                harvest resources from floating islands, defeat enemies and trade with their inhabitants in order to build
-                                a fortress strong enough to one day, reclaim their throne. 
-                            </p>
-                        </div> 
-                    </div>
-
-                    <div className="tileContainer">
-                        <div className="tileImage">
-                            <a><img className="tileImage" id="item1" src="./images/wildlands/minigame-ice.png"/></a>
-                        </div>
-                        <div className="tileContent">
-                            <h2>Wildlands</h2>
-                            <ul className="tileTags">
-                                <li>Unity</li>
-                                <li>C#</li>
-                                <li>Python</li>                                
-                            </ul>
-                            <p>
-                                Wildlands was a submission for my MA module <i>Prototyping</i> where I worked in a team of 2 to produce 
-                                prototypes at 4 stages.<br/>
-                            </p>
-                            <ol>
-                                    <li>Paper (Conceptual)</li>
-                                    <li>2D Clickteam</li>
-                                    <li>3D Unity MVP</li>
-                                    <li>3D Unity Demo</li>
-                                </ol>
-                            
-                        </div> 
-                    </div>
-                    
-                </div>
-            </div> 
-        </section>
-        
-
-
-        <section className="wholePage" ref={sectionWebDev}>
+        <section ref={sectionWebDev}>
             <div className="headerSection"><h1 >Web Development</h1></div>
-            
             <div className="sectionContent">
                 <div className="tilesContainer">
+                <div className="tileContainer">
+                        <a><img className="tileImage" id="item1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"/></a>
+                        <h2>Lees Projects | MEAN</h2>
+                        <ul className="tileTags">
+                            <li>Full-Stack</li>
+                            <li>Angular</li>
+                            <li>Express.js</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                        </ul>
+                        <p>
+                            This website was my first project in the world of Web Development.
+                            I learned the basics of HTML and CSS and soon after found ReactJS.
+                            With a background in C# I loved the syntax of ReactJS. I went through 
+                            many iterations and different designs before settling with this single 
+                            page layout.
+                        </p>
+                    </div>
+
                     <div className="tileContainer">
                         <a><img className="tileImage" id="item1" src="./images/icons/react-1.png"/></a>
-                        <h2>Portfolio - ReactJS</h2>
+                        <h2>Portfolio | React.js</h2>
                         <ul className="tileTags">
                             <li>Front-End</li>
                             <li>ReactJS</li>
                             <li>Framer-Motion</li>
                             <li>SCSS</li>
-                            <li>Routers</li>
                         </ul>
                         <p>
                             This website was my first project in the world of Web Development.
@@ -154,7 +107,7 @@ const Home = () => {
                     <div className="tileContainer">
                         <div className="tileContent">
                         <a href="https://leestevens-portfolio-three.netlify.app/"><img className="tileImage" id="item1" src="./images/icons/threejs.png"/></a>
-                            <h2>Portfolio - Three.js</h2>
+                            <h2>Portfolio | Three.js</h2>
                             <ul className="tileTags">
                                 <li>Front-End</li>
                                 <li>Three.js</li>
@@ -175,10 +128,6 @@ const Home = () => {
 
 
 
-        
-
-
-
         <section className="wholePage" ref={sectionVBA}>
             <div className="headerSection"><h1 >VBA - Professional Work</h1></div>
             
@@ -191,12 +140,8 @@ const Home = () => {
                             <ul className="tileTags">
                                 <li>VBA</li>
                                 <li>Excel</li>
-                                <li>Microsoft 365</li>
                                 <li>Automation</li>                                
                             </ul>
-                            <p>
-                                <br/>
-                            </p>
                             
                         </div> 
                     </div>
@@ -210,11 +155,67 @@ const Home = () => {
                                 <li>Word</li>
                                 <li>Automation</li>
                             </ul>
-                            <p>
-                                <br/>
+                        </div> 
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+
+        
+        <section ref={sectionGameDev}>
+            <div className="headerSection"><h1>Game Development</h1></div>
+            
+            <div className="sectionContent">
+                <div className="tilesContainer">
+                    <div className="tileContainer">
+                        <div className="tileContent">
+                            <div className="tileImage">
+                                <a><img className="tileImage" id="item1" src="/images/zephyr/main-1.png"/></a>
+                            </div>
+                            <h2>Project Zephyr</h2>
+                            <ul className="tileTags">
+                                <li>Unity</li>
+                                <li>C#</li>
+                                <li>Physics-Heavy</li>
+                                <li>Blender</li>
+                                <li>Photoshop</li>   
+                            </ul>
+                            <p> 
+                                Zephyr is a survival city builder game based in the clouds. With nothing but a simple ship, the hero must 
+                                harvest resources from floating islands, defeat enemies and trade with their inhabitants in order to build
+                                a fortress strong enough to one day, reclaim their throne. 
                             </p>
                         </div> 
                     </div>
+
+                    <div className="tileContainer">
+                        <div className="tileContent">
+                            <div className="tileImage">
+                                <a><img className="tileImage" id="item1" src="./images/wildlands/minigame-ice.png"/></a>
+                            </div>
+                            <h2>Wildlands</h2>
+                            <ul className="tileTags">
+                                <li>Unity</li>
+                                <li>C#</li>
+                                <li>Python</li>
+                                <li>Blender</li>
+                                <li>Photoshop</li>                                
+                            </ul>
+                            <p>
+                                Wildlands was a submission for my MA module <i>Prototyping</i> where I worked in a team of 2 to produce 
+                                prototypes at 4 stages.<br/>
+                            </p>
+                            <ol>
+                                <li>Paper (Conceptual)</li>
+                                <li>2D Clickteam</li>
+                                <li>3D Unity MVP</li>
+                                <li>3D Unity Demo</li>
+                            </ol>
+                            
+                        </div> 
+                    </div>
+                    
                 </div>
             </div> 
         </section>

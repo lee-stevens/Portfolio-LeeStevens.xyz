@@ -1,12 +1,12 @@
 # Lee Stevens Portfolio - React
-Hello and welcome to the repository for my portfolio developed in react. I set myself a challenge to branch out into front-end web development, 
-and there was no more suitable task than to create myself a portfolio!
 
-It has been a very enjoyable and yet stressful endeavour as I have learned entirely from youtube and various forums, mainly StackOverflow. In addition to learning React, I have also
-created another website using only ThreeJS which can be found <a href="https://leestevens-portfolio-three.netlify.app/">Here<a> or by it's 
-<a href="https://github.com/leesprojects/Portfolio-Three">GitHub Repository<a>
+Hi there, my name is Lee Stevens and this is the repository for my React.js portfolio
 
-You can find the latest deployment available at: https://leestevens-portfolio-react.netlify.app/ or leestevens.xyz
+This portfolio was my first project with using a library or framework and introduced me to the wonderous world of JavaScript's capabilities.
+
+Since, developing this portfolio, I moved over to MEAN full-stack having developed the essential web dev skills needed, I frequently come back to React, but Angular is my focus.
+
+You can find the latest deployment available at: (Leestevens.xyz)[https://leestevens.xyz/] as well as my current projects on my public Github project (LeesProjects | Project View)[https://github.com/users/leesprojects/projects/2/views/1]
 
 # Dependencies
 <ol>
