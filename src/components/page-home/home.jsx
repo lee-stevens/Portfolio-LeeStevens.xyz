@@ -2,6 +2,9 @@ import './index.css'
 import { motion } from "framer-motion"
 import { pageAnimation } from "../frameranimations/frameranimations"
 import { useRef } from 'react'
+import { Slide } from 'react-slideshow-image'
+
+import 'react-slideshow-image/dist/styles.css'
 
 
 const Home = () => {
@@ -17,6 +20,16 @@ const Home = () => {
             behavior: "smooth"
         })
     }
+
+    const imagesWildlands = [
+        "/images/wildlands/main-start.png",
+        "/images/wildlands/minigame-ice.png",
+        "/images/wildlands/minigame-forest-2.png"
+    ]
+
+    const imagesZephyr = [
+        "/images/zephyr/main-1.png"
+    ]
 
     return (
         <main>
@@ -36,6 +49,8 @@ const Home = () => {
         <motion.div initial="initial" animate="animate" exit="exit"
         variants={pageAnimation}
         transition={{ duration: 2}}>
+
+
 
         <section ref={sectionAbout}>
             <div className="section-content">
@@ -59,7 +74,7 @@ const Home = () => {
                 </div>
             </div>
         </section>
-            
+
 
 
         <section ref={sectionWebDev}>
@@ -195,9 +210,9 @@ const Home = () => {
                 <div className="cards-container">
                     <div className="card-container">
                         <div className="cardContent">
-                            <div className="card-img">
-                                <a><img className="card-img" src="/images/zephyr/main-1.png"/></a>
-                            </div>
+                            <Slide style={{height: "5em"}} autoplay={false} indicators={true}>
+                                <div className="each-slide-effect"><div style={{ 'backgroundImage': `url(${imagesZephyr[0]})` }}></div></div>
+                            </Slide>
                             <h2>Project Zephyr</h2>
                             <ul className="card-tags">
                                 <li>Unity</li>
@@ -216,10 +231,12 @@ const Home = () => {
 
                     <div className="card-container">
                         <div className="cardContent">
-                            <div className="card-img">
-                                <a><img className="card-img" src="./images/wildlands/minigame-ice.png"/></a>
-                            </div>
-                            <h2>Wildlands</h2>
+                            <Slide style={{height: "5em"}} autoplay={true} indicators={true} transitionDuration={2000} duration={4000}>
+                                <div className="each-slide-effect"><div style={{ 'backgroundImage': `url(${imagesWildlands[0]})` }}></div></div>
+                                <div className="each-slide-effect"><div style={{ 'backgroundImage': `url(${imagesWildlands[1]})` }}></div></div>
+                                <div className="each-slide-effect"><div style={{ 'backgroundImage': `url(${imagesWildlands[2]})` }}></div></div>
+                            </Slide>
+                            <a href="https://github.com/leesprojects/MA-ProjectShadowlands"><h2>Wildlands</h2></a>
                             <ul className="card-tags">
                                 <li>Unity</li>
                                 <li>C#</li>
