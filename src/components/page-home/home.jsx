@@ -83,7 +83,7 @@ const Home = () => {
             <div className="section-content">
                 <div className="cards-container">
                     <div className="card-container">
-                        <a href="https://github.com/leesprojects/MEAN-LeesProjects"><img className="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"/></a>
+                        <a href="http://mean-leesprojects.s3-website.eu-west-2.amazonaws.com/"><img className="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"/></a>
                         <h2>Lees Projects | MEAN</h2>
                         <ul className="card-tags">
                             <li>Full-Stack</li>
@@ -92,6 +92,8 @@ const Home = () => {
                             <li>Node.js</li>
                             <li>MongoDB</li>
                         </ul>
+                        <a href="http://mean-leesprojects.s3-website.eu-west-2.amazonaws.com/"><h3>Website</h3></a>
+                        <a href="https://github.com/leesprojects/mean-leesprojects"><h3>Github Repo</h3></a>
                         <p>
                             This web app is built with MEAN full-stack, it's essentially an all-in-one website for everything I could need at home or on the go<br/>
                             One sub-project is a flashcard system which I used for learning new languages and programming concepts!
@@ -107,6 +109,7 @@ const Home = () => {
                             <li>Framer-Motion</li>
                             <li>SCSS</li>
                         </ul>
+                        <a href="https://github.com/leesprojects/Portfolio-LeeStevens.xyz"><h3>Github Repo</h3></a>
                         <p>
                             My first portfolio built using React.js, it was my first step in becomming a web developer<br/>
                             Since then I have learned a lot including MEAN and with this new knowledge, I recreated the portfolio with Angular right here!
@@ -131,24 +134,25 @@ const Home = () => {
                         </p>
                     </div>
 
-                    <div className="card-container">
+
+
+                <div className="card-container">
                         <div className="cardContent">
-                        <a href="https://leestevens-portfolio-three.netlify.app/"><img className="card-img" src="./images/icons/threejs.png"/></a>
-                            <h2>Portfolio | Three.js</h2>
+                        <a href="https://nextjs-leesprojects-62is.vercel.app/"><img className="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/2560px-Nextjs-logo.svg.png"/></a>
+                            <h2>Portfolio | Next.js</h2>
                             <ul className="card-tags">
                                 <li>Front-End</li>
-                                <li>Three.js</li>
-                                <li>ReactJS</li>
-                                <li>React-Three-Fiber</li>
+                                <li>Next.js</li>
                             </ul>
-                            <p>
-                                After developing this portfolio in ReactJS I wanted to try something completely different<br/>
-                                I found that you could make 3D interactive websites using ThreeJS and that you can
-                                integrate ReactJS using React-Three-Fiber. I knew
-                                I was right at home since it was so similar to Unity Game Development<br/>
+                            <a href="https://nextjs-leesprojects-62is.vercel.app/"><h3>Website</h3></a>
+                            <a href="https://github.com/leesprojects/nextjs-leesprojects"><h3>Github Repo</h3></a>
+                            <p> A new side-project expanding my knowledge of Javascript Frameworks & libraries
                             </p>
                         </div> 
                     </div>
+
+
+
                 </div>
             </div> 
         </section>
