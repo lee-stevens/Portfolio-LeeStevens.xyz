@@ -57,7 +57,6 @@ const Home = () => {
                 <div className="cards-container">
                     <div className="card-container" style={{width: "70em"}}>
                         <h2>My name is Lee Stevens and I am a programmer based in London. </h2>
-                        <h3>Job Search Status | Looking For Web Development MEAN or MERN full-stack</h3><br/>
 
                         <h3>Current Projects</h3>
                             Inside-Work | 🔭<a href="https://forenzicswebapp2-sandbox.mxapps.io/">Forenzix Web App</a> for Audit Intelligence | Monday - Thursday<br/>
@@ -67,9 +66,7 @@ const Home = () => {
                             I'm a recent graduate from Brunel University with a BSc in Computer Science and an MA in Game Development.<br/>
                             My final 2 years of University was centered around C# and Unity game development. <br/><br/>
                             
-                            Since graduating I have started working as a VBA and Web Developer at Audit Intelligence.<br/>
-                            However, I am on a team of one and rely on self-teaching to become a better programmer.<br/>
-                            That's why I am looking to join a talented team who can propel myself as a programmer whilst developing brilliant products.
+                            Since graduating I've spent a year as a VBA and Web Developer at Audit Intelligence.<br/>
                     </div>
                 </div>
             </div>
@@ -82,6 +79,24 @@ const Home = () => {
 
             <div className="section-content">
                 <div className="cards-container">
+                    <div className="card-container">
+                        <a href="http://mean-leesprojects.s3-website.eu-west-2.amazonaws.com/"><img className="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"/></a>
+                        <h2>Zoo Booking App | ASP.NET & Angular</h2>
+                        <ul className="card-tags">
+                            <li>Full-Stack</li>
+                            <li>Angular</li>
+                            <li>ASP.NET</li>
+                            <li>SQL</li>
+                            <li>Entity Framework Core</li>
+                            <li>NgBootstrap</li>
+                        </ul>
+                        <a href="https://github.com/leesprojects/ASP-Angular-Animal-App"><h3>Github Repo</h3></a>
+                        <p>
+                            This web app is built with MEAN full-stack, it's essentially an all-in-one website for everything I could need at home or on the go<br/>
+                            One sub-project is a flashcard system which I used for learning new languages and programming concepts!
+                        </p>
+                    </div>
+
                     <div className="card-container">
                         <a href="http://mean-leesprojects.s3-website.eu-west-2.amazonaws.com/"><img className="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/2048px-Angular_full_color_logo.svg.png"/></a>
                         <h2>Lees Projects | MEAN</h2>
@@ -133,26 +148,6 @@ const Home = () => {
                             Although it's 'low-code', there was a lot of code involved, mainly SCSS, VBA and Java.
                         </p>
                     </div>
-
-
-
-                <div className="card-container">
-                        <div className="cardContent">
-                        <a href="https://nextjs-leesprojects-62is.vercel.app/"><img className="card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/2560px-Nextjs-logo.svg.png"/></a>
-                            <h2>Portfolio | Next.js</h2>
-                            <ul className="card-tags">
-                                <li>Front-End</li>
-                                <li>Next.js</li>
-                            </ul>
-                            <a href="https://nextjs-leesprojects-62is.vercel.app/"><h3>Website</h3></a>
-                            <a href="https://github.com/leesprojects/nextjs-leesprojects"><h3>Github Repo</h3></a>
-                            <p> A new side-project expanding my knowledge of Javascript Frameworks & libraries
-                            </p>
-                        </div> 
-                    </div>
-
-
-
                 </div>
             </div> 
         </section>
