@@ -55,18 +55,19 @@ const Home = () => {
         <section ref={sectionAbout}>
             <div className="section-content">
                 <div className="cards-container">
-                    <div className="card-container" style={{width: "70em"}}>
-                        <h2>My name is Lee Stevens and I am a programmer based in London. </h2>
+                    <div className="card-container" style={{width: "50em"}}>
+                        <h2>Hi there, my name is Lee Stevens</h2>
+                        I work with: Angular & C#
 
-                        <h3>Current Projects</h3>
-                            Inside-Work | 🔭<a href="https://forenzicswebapp2-sandbox.mxapps.io/">Forenzix Web App</a> for Audit Intelligence | Monday - Thursday<br/>
-                            Outside-Work | <a href="https://github.com/leesprojects/MEAN-LeesProjects">LeesProjects</a> | Afterwork & Friday to Sunday<br/><br/>
+                        <h3>I am currently working on</h3>
+                        Inside-Work | 🔭<a href="https://forenzicswebapp2-sandbox.mxapps.io/">Forenzix Web App</a> or a VBA project<br/>
+                        Outside-Work | An Angular-ASP.NET <a href="https://github.com/leesprojects/ASP-Angular-Animal-App">Zoo App</a><br/><br/>
 
-                            <h3>About me</h3>
-                            I'm a recent graduate from Brunel University with a BSc in Computer Science and an MA in Game Development.<br/>
-                            My final 2 years of University was centered around C# and Unity game development. <br/><br/>
-                            
-                            Since graduating I've spent a year as a VBA and Web Developer at Audit Intelligence.<br/>
+                        <h3>About me</h3>
+                        I am a web developer from London who majored in Computer Science and Game Development from Brunel University.<br/><br/>
+                        In 2022, I built myself a portfolio in React to find myself a game development job, and in doing so, I was suprised to how fun and awesome Web Development is.<br/><br/>
+                        Since then, I've completely converted over to Web Development and found myself an amazing job role with Angular.<br/><br/>
+                        When I'm not at work I love programming on a random project, keeping my animals and riding my motorbike!
                     </div>
                 </div>
             </div>
@@ -88,7 +89,9 @@ const Home = () => {
                             <li>ASP.NET</li>
                             <li>SQL</li>
                             <li>Entity Framework Core</li>
-                            <li>NgBootstrap</li>
+                            <li>Ngx-Bootstrap</li>
+                            <li>Bootstrap 5</li>
+                            <li>SQLite</li>
                         </ul>
                         <a href="https://github.com/leesprojects/ASP-Angular-Animal-App"><h3>Github Repo</h3></a>
                         <p>
@@ -245,14 +248,12 @@ const Home = () => {
                             </ul>
                             <p>
                                 Wildlands was a submission for my MA module <i>Prototyping</i> where I worked in a team of 2 to produce 
-                                prototypes at 4 stages.<br/>
+                                prototypes at 4 stages.<br/><br/>
+                                Paper (Conceptual)<br/>
+                                2D Clickteam<br/>
+                                3D Unity MVP<br/>
+                                3D Unity Demo
                             </p>
-                            <ol>
-                                <li>Paper (Conceptual)</li>
-                                <li>2D Clickteam</li>
-                                <li>3D Unity MVP</li>
-                                <li>3D Unity Demo</li>
-                            </ol>
                             
                         </div> 
                     </div>
